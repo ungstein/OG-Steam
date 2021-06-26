@@ -538,7 +538,7 @@
 	
 	layout
 	{
-		place { control="UINavigatorPanel" width=max height=max margin-right=14 margin-left=12 margin-bottom=14 margin-top=65 }
+		place { control="UINavigatorPanel" width=max height=max margin-right=14 margin-left=12 margin-bottom=14 margin-top=58 }
 		
 		place { control="UIStatusPanel" region=bottom width=max height=max align=bottom margin-bottom=0 }
 		
@@ -548,14 +548,14 @@
 			
 		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=8 spacing=2 }
 
-		place [!$OSX] { control="fullscreen" align=right y=7 height=24 spacing=0 margin-right=24 margin-top=67 region="bigpicture"}
+		place [!$OSX] { control="fullscreen" align=right y=7 height=24 spacing=0 margin-right=24 margin-top=60 }
 
-		place { control="startvr, exitvr" align=right end-right="fullscreen" height=24 margin-right=8 margin-top=74 }
+		place { control="startvr, exitvr" align=right end-right="fullscreen" height=24 margin-right=8 margin-top=67 }
 
-		place { control="AccountButton" align=right end-right="startvr" margin-top=74 margin-right=8 height=24 }
-		place { control="InboxButton" align=right end-right="AccountButton" margin-top=74 margin-right=8 height=24 }
-		place { control="AnnouncementButton" align=right end-right="InboxButton" margin-top=74 margin-right=8 height=24 width=34 }
-		place { control="ParentalLockButton" align=right end-right="AnnouncementButton" margin-top=74 margin-right=8 height=24 width=44 }
+		place { control="AccountButton" align=right end-right="startvr" margin-top=67 margin-right=8 height=24 }
+		place { control="InboxButton" align=right end-right="AccountButton" margin-top=67 margin-right=8 height=24 }
+		place { control="AnnouncementButton" align=right end-right="InboxButton" margin-top=67 margin-right=8 height=24 width=34 }
+		place { control="ParentalLockButton" align=right end-right="AnnouncementButton" margin-top=67 margin-right=8 height=24 width=44 }
 		place [!$OSX] { control="universe_label, EOLAlert, SupportAlert" spacing=8 align=right end-right="ParentalLockButton" margin-top=9 margin-right=8 height=24 }
 
 		region { name=bottom align=bottom width=max height=80 }
@@ -564,7 +564,7 @@
 		
 		place { control="add_game" x=21 y=22 region=bottom height=22}
 
-		place { control="view_friends" height=42 width=62 region=bottom align=right dir=right margin-top=12 margin-right=25 }
+		place { control="view_friends" height=42 width=72 region=bottom align=right dir=right margin-top=12 margin-right=25 }
 //		place { control="view_servers" height=64 width=122 region=bottom align=left dir=right margin-top=43 margin-left=0 }
 	
  		// the title bar is missing, so increase the size of the grip

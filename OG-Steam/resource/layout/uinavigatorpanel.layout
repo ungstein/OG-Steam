@@ -838,7 +838,7 @@
 		bgcolor="html.secureurl"
 		inset-left=4
 		inset-right=4
-		inset-top=3
+		inset-top=0
 		render=
 		{
 			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
@@ -885,19 +885,19 @@
 		
 		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right x=-33 y=-4 region="belowcontent"}
 	
-		place { control="PageLoadThrobber" align=right y=40 height=20 width=20  margin-right=10 margin-top=9 }
+		place { control="PageLoadThrobber" align=right y=40 height=20 width=20  margin-right=10 margin-top=8 }
 
 		place { control="subnavgroup_library" align=top-center y=50 height=28 width=max margin-right=8 margin-left=84 }
 		
-		//place { control="refresh,stop,home,URLStatusImage" align=left x=70 y=44 height=30 width=30 spacing=0 margin-left=0 width=max }
+		//place { control="refresh,stop,home,URLStatusImage" align=left x=70 y=45 height=30 width=30 spacing=0 margin-left=0 width=max }
 		
-		place { control="EVCert" align=left x=155 y=46 height=23 width=100 spacing=0 margin-left=0 }
+		place { control="EVCert" align=left x=155 y=47 height=23 width=100 spacing=0 margin-left=0 }
 		
-		place { control="URLBar" x=255 y=46 height=23 width=max spacing=8 margin-right=100 }
+		place { control="URLBar" x=255 y=47 height=23 width=max spacing=8 margin-right=100 }
 
-		place {control="label_search_icon,library_search" x=80 y=46 height=24 spacing=8}
+		place {control="label_search_icon,library_search" x=80 y=47 height=24 spacing=8}
 		
-		region { name="dropdown" width=250 x=82 y=46 height=24 }
+		region { name="dropdown" width=250 x=82 y=47 height=24 }
 		
 		place { control="library_filters" align=right spacing=8 region="dropdown" }
  

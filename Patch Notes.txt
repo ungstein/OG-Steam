@@ -4,6 +4,15 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.2
+
+Minor tweaks
+- Raised top margin of UI navigator panel
+- Lowered url bar and nav buttons
+- Increased width of "Friends & Chat" button
+
+------------------------------------------------------------
+
 v1.0.1
 
 Minor tweaks
