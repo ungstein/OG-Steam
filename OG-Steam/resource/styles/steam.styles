@@ -875,7 +875,7 @@ steam.styles
 		Frame 
 		{
 			bgcolor="GreenBG"
-			render_bg
+			render
 			{
 				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
 				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
@@ -887,7 +887,7 @@ steam.styles
 		Frame:FrameFocus
 		{
 			bgcolor="GreenBG"
-			render_bg
+			render
 			{
 				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
 				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
@@ -1793,7 +1793,7 @@ steam.styles
 				4="fill( x1 - 1, y0, x1, y1, LightGreenBG )"  // right
 			}
 		}
-
+		
 		MenuBar
 		{
 				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top

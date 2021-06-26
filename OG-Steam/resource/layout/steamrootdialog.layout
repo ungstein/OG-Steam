@@ -43,6 +43,24 @@
 			textAlignment=center
 			command="OpenSupportAlertWindow"
 		}	
+
+		EOLAlert
+		{
+			ControlName=Button
+			labelText="#Steam_EOLAlert"
+			style="support_alert"
+			textAlignment=center
+			command="OpenEOLAlertWindow"
+		}
+
+		ParentalLockButton
+		{
+			ControlName=ToggleButton
+			style="parental_lock_button"
+			labelText=""
+			text=""
+			command="ParentalLock"
+		}
 		
 		InboxButton
 		{
@@ -294,7 +312,7 @@
 			render {}
 			render_bg
 			{
-				0="fill( x0, y0, x1, y1+1, support_flag_red )"
+				0="fill( x0, y0, x1, y1+1, parental_lock_inactive1 )"
 				1="image( x0, y0, x0, y1, graphics/support_flag_left )"
 				2="image( x1, y0, x1, y1, graphics/support_flag_right )"
 				3="image_scale( x0+3, y0, x1, y0+3, graphics/support_flag_top )"
@@ -316,7 +334,7 @@
 			render {}
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y1+1, support_hover_red1, support_hover_red2 )"
+				0="fill( x0, y0, x1, y1, parental_lock_inactive3 )"
 				1="image( x0, y0, x0, y1, graphics/support_flag_left_hover )"
 				2="image( x1, y0, x1, y1, graphics/support_flag_right_hover )"
 				3="image_scale( x0+3, y0, x1, y0+3, graphics/support_flag_top_hover )"
@@ -489,6 +507,91 @@
 				6="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"
 			}
 		}
+
+		Menu
+		{
+			bgcolor = DarkGreenBG
+			inset = "1 0 1 1"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, LightGreenBG )"  // top
+				2="fill( x0, y1 - 1, x1, y1, LightGreenBG )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, LightGreenBG )"  // left
+				4="fill( x1 - 1, y0, x1, y1, LightGreenBG )"  // right
+			}
+		}
+
+		parental_lock_button
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, parental_lock_inactive1 )"
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				5="image( x0+9, y0+2, x1, y1, resource/notfamilyview )"
+			}
+		}
+
+		parental_lock_button:hover
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, parental_lock_inactive3 )"
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				5="image( x0+9, y0+2, x1, y1, resource/notfamilyview )"
+			}
+
+		}
+
+		parental_lock_button:selected
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, green6 )"
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				5="image( x0+9, y0+2, x1, y1, resource/familyview )"
+			}
+
+		}
+
+
+		parental_lock_button:selected:hover
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1, y1, green5 )"
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				5="image( x0+9, y0+2, x1, y1, resource/familyview )"
+			}
+
+		}
+		
+		VRButtonExit [$OSX]
+		{
+			padding-left=0
+			padding-top=8
+			padding-right=0
+			padding-bottom=0
+		}
 		
 		inboxmenuitem
 		{
@@ -556,7 +659,7 @@
 		place { control="InboxButton" align=right end-right="AccountButton" margin-top=68 margin-right=8 height=24 }
 		place { control="AnnouncementButton" align=right end-right="InboxButton" margin-top=68 margin-right=8 height=24 width=34 }
 		place { control="ParentalLockButton" align=right end-right="AnnouncementButton" margin-top=68 margin-right=8 height=24 width=44 }
-		place [!$OSX] { control="universe_label, EOLAlert, SupportAlert" spacing=8 align=right end-right="ParentalLockButton" margin-top=9 margin-right=8 height=24 }
+		place [!$OSX] { control="universe_label, EOLAlert, SupportAlert" spacing=8 align=center end-right="ParentalLockButton" margin-top=68 margin-right=8 height=24 }
 
 		region { name=bottom align=bottom width=max height=80 }
 		

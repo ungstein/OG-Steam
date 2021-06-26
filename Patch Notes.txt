@@ -4,6 +4,15 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.6
+
+Minor tweaks
+- Fixed Support Alert position
+- Added Family View button
+- Fixed Frame border
+
+------------------------------------------------------------
+
 v1.0.5
 
 Minor tweaks
