@@ -1,0 +1,32 @@
+------------------------------------------------------------
+
+OG-Steam Patch Notes
+
+------------------------------------------------------------
+
+v1.0.1
+
+Minor tweaks
+- Changed button font size
+- Updated README.md
+
+Cleanup
+- Removed 2x textures
+
+Misc.
+- Added "Patch Notes.txt"
+
+------------------------------------------------------------
+
+v1.0
+
+This is the first official release of OG-Steam.
+This means I am happy enough with the project's current
+state to give it the "1.0". I didn't bother with versions
+for the "beta" because there were too many minor changes
+to track (and I'm lazy). From now on, all updates will be
+released with a version number. At this point, most, if
+not all visual inconsistencies have been rectified, and
+most, if not all unnecessary files have been trimmed.
+Future versions should be maintenance patches to fix
+problems caused by newer versions of Steam.
