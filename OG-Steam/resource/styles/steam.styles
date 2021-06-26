@@ -1192,7 +1192,7 @@ steam.styles
 
 		"Page ListPanel"
 		{
-			inset = "1 1 1 1"
+			inset = "1 0 1 1"
 			bgcolor = none
 			render_bg
 			{
@@ -1424,7 +1424,7 @@ steam.styles
 			font-weight=800
 			textcolor="White"
 			bgcolor="none"
-			inset="1 3 0 0"
+			inset="0 3 0 0"
 
 			render_bg
 			{
@@ -1433,7 +1433,7 @@ steam.styles
 				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
 			
-				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+				5="fill( x0 + 1, y0 + 1, x1 - 2, y1 - 1, GreenBG )" // inside
 			}
 		}
 
@@ -2163,10 +2163,10 @@ steam.styles
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
 
 				//Up Arrow
-				10="fill( x0 + 8, y0 + 5, x0 + 9, y0 + 6, BorderBright )"
-				11="fill( x0 + 7, y0 + 6, x0 + 10, y0 + 7, BorderBright )"
-				12="fill( x0 + 6, y0 + 7, x0 + 11, y0 + 8, BorderBright )"
-				13="fill( x0 + 5, y0 + 8, x0 + 12, y0 + 9, BorderBright )"
+				10="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 7, BorderBright )"
+				11="fill( x0 + 7, y0 + 7, x0 + 10, y0 + 8, BorderBright )"
+				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, BorderBright )"
+				13="fill( x0 + 5, y0 + 9, x0 + 12, y0 + 10, BorderBright )"
 			}
 		}
 
@@ -2181,10 +2181,10 @@ steam.styles
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
 
 				//Down Arrow
-				10="fill( x0 + 8, y0 + 9, x0 + 9, y0 + 10, BorderBright )"
-				11="fill( x0 + 7, y0 + 8, x0 + 10, y0 + 9, BorderBright )"
-				12="fill( x0 + 6, y0 + 7, x0 + 11, y0 + 8, BorderBright )"
-				13="fill( x0 + 5, y0 + 6, x0 + 12, y0 + 7, BorderBright )"
+				10="fill( x0 + 8, y0 + 10, x0 + 9, y0 + 11, BorderBright )"
+				11="fill( x0 + 7, y0 + 9, x0 + 10, y0 + 10, BorderBright )"
+				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, BorderBright )"
+				13="fill( x0 + 5, y0 + 7, x0 + 12, y0 + 8, BorderBright )"
 			}
 		}
 		

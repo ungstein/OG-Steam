@@ -144,7 +144,7 @@
 		place { control=SeekBar region=transport x=0 y=50 height=18 width=260 }
 
 		place { control="TrackList" x=10 y=94 width=max height=max margin-right=10 margin-bottom=40 }
-		place { control="NoTracksLabel" x=10 y=94 margin-right=10 margin-bottom=33 align="top-center" }
+		place { control="NoTracksLabel" x=10 y=128 margin-right=10 margin-bottom=33 align="top-center" }
 		place { control="InfoLabel" align=bottom x=10 y=94 width=max margin-right=10 margin-bottom=8 }
 	}
 	

@@ -144,10 +144,17 @@
 		WrapPanel
 		{			
 			inset="3 1 2 2"
-			bgcolor="none"
+			bgcolor="DarkGreenBG"
 
-			render_bg {
-
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+			render_bg
+			{
 			}
 		}
 		
@@ -191,8 +198,6 @@
 	
 	layout
 	{
-		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=8 spacing=2 }
-		
 		region { name="selectorbar" margin-left=10 margin-right=340 margin-top=25 height=80 }
 		place { control="selectorlabel" region="selectorbar" x=0 y=8 }
 		place { control="game_selector" region="selectorbar" start="selectorlabel" dir=right y=-5 width=278 }
@@ -200,7 +205,7 @@
 		region { name="details" align=right margin-right=10 margin-top=34 margin-bottom=5 margin-left=358 height=max }
 		region { name="list" margin-left=10 margin-right=340 margin-top=58 margin-bottom=35 width=max }
 
-		place {	control="grid" region="list" x=0 y=0 width=340 height=max }
+		place {	control="grid" region="list" x=0 y=0 width=340 height=300 }
 		place { control="no_screenshots" region="list" y=50 align="top-center" }
 
 		place { control="SSDetails" region="details" y=0 width=max height=max margin-bottom=128 align="top-center" }
