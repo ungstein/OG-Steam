@@ -4,6 +4,14 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.8
+
+Minor tweaks
+- URL bar is now hidden when disabled under Settings > Interface
+- Adjusted UINavigatorPanel to suit
+
+------------------------------------------------------------
+
 v1.0.7
 
 Minor tweaks

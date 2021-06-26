@@ -15,7 +15,6 @@ steam.styles
 		yellow="255 255 0 255"
 		offwhite="159 162 168 255"
 		dullgreen="216 222 211 255"
-		maize="203 191 87 255"
 		red="255 51 51 255"
 		darkblue="35 55 75 255"
 		blue="94 109 140 255"
@@ -60,7 +59,7 @@ steam.styles
 		TextHover="229 226 223 255"
 		White="242 239 235 255"
 		White="240 237 235 235" // color of any selected text
-		MaizeBG="64 89 128 255" // background color of any selected text 
+		MaizeBG="145 134 60 255" // background color of any selected text 
 		TextGlowHover="128 124 120 255"
 		TextGlowSelected="171 169 166 255"
 		TextGlowHoverSm="128 123 120 255"
@@ -155,11 +154,9 @@ steam.styles
 		green7 "62 90 22 255"
 		green8 "38 48 2 255"
 
-
 		launch0 "119 215 250 255"
 		launch1 "83 172 204 255"
 		launch2 "54 125 153 255"
-
 
 		parental_lock_inactive1 "154 49 48 255"
 		parental_lock_inactive2 "189 79 79 255"
@@ -173,7 +170,7 @@ steam.styles
 		AnnouncementBlue="61 146 175 255"
 
 		// colors pulled from steamscheme.res
-		"ClayBG"			"70 70 70 255"
+		"ClayBG"				"70 70 70 255"
 		"ClayButtonBG"			"87 88 88 255"
 		"ClayEnabled"			"85 88 82 255"
 		"ClayKeyFocus"			"89 92 77 255"
@@ -185,16 +182,17 @@ steam.styles
 		"LightClayBG"			"104 106 101 255"	// property sheet interior, active tab
 		"LightClayButtonBG"		"125 128 120 255"	// buttons on property sheet interior, active tab
 		"DarkClayBG"			"47 49 45 255"		// shadow
-		"p_ClayMouseDown"   "94 94 94 255"
-		"ClaySheetBottom"   "92 90 87 255"
-		"MaizeBG"     "145 134 60 255"  // background color of any selected text or menu item
-		"GreenBG"     "76 88 68 255"
-		"LightGreenBG"      "90 106 80 255"   // darker background color
-		"DarkGreenBG"     "62 70 55 255"    // background color of text edit panes (chat, text Entries, etc.)
-		"LightGrayBG"     "121 126 121 255"
-		"GrayBG"      "77 73 71 255"
-		"GrayBG2"     "39 37 35 255"
-		"TempGradientTop" "53 52 51 255"
+		"p_ClayMouseDown"   	"94 94 94 255"
+		"ClaySheetBottom"   	"92 90 87 255"
+		"Maize"					"196 181 80 255"
+		"MaizeBG"     			"145 134 60 255"  	// background color of any selected text or menu item
+		"GreenBG"     			"76 88 68 255"
+		"LightGreenBG"      	"90 106 80 255"   	// darker background color
+		"DarkGreenBG"     		"62 70 55 255"    	// background color of text edit panes (chat, text Entries, etc.)
+		"LightGrayBG"     		"121 126 121 255"
+		"GrayBG"      			"77 73 71 255"
+		"GrayBG2"     			"39 37 35 255"
+		"TempGradientTop" 		"53 52 51 255"
 
 		white="255 255 255 255"
 		transparentBlack="0 0 0 128"
@@ -210,7 +208,6 @@ steam.styles
 		LightGrayBG="121 126 121 255"
 		GrayBG="73 78 73 255"
 		GrayBG2="82 89 78 255"
-
 		SecBG=GrayBG2
 
 		DisabledText1="117 128 111 255"	// disabled text
