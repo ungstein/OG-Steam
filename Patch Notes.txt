@@ -4,6 +4,14 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.3
+
+Minor tweaks
+- Adjusted right margin of Friends & Chat button
+- Lowered top margin of announcements, notifications, etc.
+
+------------------------------------------------------------
+
 v1.0.2
 
 Minor tweaks
