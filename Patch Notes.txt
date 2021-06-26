@@ -4,6 +4,13 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.5
+
+Minor tweaks
+- Improved overlay web browser layout
+
+------------------------------------------------------------
+
 v1.0.4
 
 Minor tweaks

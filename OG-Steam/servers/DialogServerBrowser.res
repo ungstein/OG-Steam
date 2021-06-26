@@ -58,7 +58,6 @@
 	
 	layout
 	{
-		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=8 spacing=2 }
 		place { control="GameTabs" width=max height=max margin-top=36 margin-bottom=32 margin-left=12 margin-right=12 }
 	}
 }

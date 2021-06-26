@@ -17,12 +17,122 @@
 				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
 				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
-			}			
+			}
 		}
+		
+		ToolWindow:framefocus
+		{
+			bgcolor = GreenBG
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+		
+		
+		Button
+	  {     
+	  	textcolor="0 0 0 0" // don't render the + as text
+			render_bg
+			{
+				// background fill
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				5="fill( x0, y0, x1 - 1, y1 - 1, none )"
+				6="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/new_tab)"	
+			}
+	  }
+	  
+	  Button:hover
+		{     
+			render_bg
+			{
+				// background fill
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				5="fill( x0, y0, x1 - 1, y1 - 1, none )"	
+				6="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/new_tab)"				
+			}
+		}
+
+	  Button:active
+		{     
+			render_bg
+			{
+				// background fill
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				5="fill( x0, y0, x1 - 1, y1 - 1, none )"	
+				6="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/new_tab)"				
+			}
+		}
+	  
+	  MenuButton
+	  { 
+	  	padding-right=4
+		 	bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1 - 1, y1 - 1, GreenBG )"
+			}
+	  }
+	  
+	  TabMenuButtonFlash
+	  { 
+	   	bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1 - 1, y1 - 1, Maize )"
+			}
+	  }
+	  
+	  TabMenuItemFlash
+	  {
+	  	textcolor="PropertySheet.FlashTabColor"
+	  }
+	  
+	 	PageTab
+		{
+			font-size=14
+			font-style=regular
+    }
+    
+	  PageTab:hover
+	  {
+			font-size=14
+			font-style=regular
+		}
+  
+		PageTab:selected:hover
+		{
+			font-size=14
+			font-style=regular
+		}
+	    
+		PageTab:selected
+		{
+			font-size=14
+			font-style=regular
+	  }
+    
 	}
 
 	layout
 	{
-		place { control="ToolWindowSheet" x=8 y=23 height=max width=max margin-right=8 }
+		place [!$OSX] { control="ToolWindowSheet" x=10 y=24 height=max width=max margin-right=10 margin-bottom=-10 }
+		place [$OSX] { control="ToolWindowSheet" x=10 y=24 height=max width=max margin-right=10 margin-bottom=-10 }
 	}
 }
