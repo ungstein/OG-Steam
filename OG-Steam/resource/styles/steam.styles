@@ -1,0 +1,3704 @@
+steam.styles
+{
+	colors
+	{
+		// colors section can include colors in "R G B A" form, or references to already defined colors;
+		// it can also include just general settings controls can pull from for extra customization
+
+		black="0 0 0 255"
+		dark="28 33 42 255"
+		almostBlack="22 25 28 255"
+		almostBlackTrans="22 25 28 204"
+		white="255 255 255 255"
+		grey="142 152 167 255"
+		none="0 0 0 0"
+		yellow="255 255 0 255"
+		offwhite="159 162 168 255"
+		dullgreen="216 222 211 255"
+		maize="203 191 87 255"
+		red="255 51 51 255"
+		darkblue="35 55 75 255"
+		blue="94 109 140 255"
+		darkred="128 0 0 255"
+		darkpurple="64 0 64 255"
+
+		dark_blue "27 44 61 255"
+		med_blue "13 36 82 255"
+		bg_blue "10 25 56 255"
+
+		// control colors
+		bordercolor="133 130 113 255"
+		darkcorner="77 73 71 255"
+		buttontext=Text
+		buttontextactive=Text
+
+		// cool we can define font-families here as well
+		basefont="Tahoma"
+		basefontbold="Tahoma Bold"
+		basefont="Helvetica" [$OSX]
+		basefontbold="Helvetica Bold" [$OSX]
+
+		// new control colors
+		ButtonFace="105 102 99 200"
+		ButtonFace2="92 89 86 255" // for use in main client list panel column header, some button states
+		ButtonFace3="95 92 90 255" // button cornering pixels
+		ButtonFaceDisabled="none"
+		ButtonFaceHover="105 102 99  240"   /// hover!
+		ButtonFaceActive="105 102 99  240"  // not sure what this state is...
+		ButtonFaceFocus="105 102 99  240"  //  keyboard focus
+		ButtonFaceActiveFocus="105 102 99  255"  // this is the default choice
+		ButtonBorder="112 109 105 255"
+		ButtonBorderPage="128 124 120 255"
+		ButtonBorderDisabled="77 75 72 255"
+		ButtonBorderDisabled2="67 65 63 255"  //cornering pixels
+		ButtonBorderActive="140 135 129 255"
+		ButtonBorderFocus="153 147 141 255"
+
+		Text="209 207 205 255"
+		Text2="184 180 176 255"
+		TextDisabled="102 99 96 255"
+		TextHover="229 226 223 255"
+		White="242 239 235 255"
+		White="240 237 235 235" // color of any selected text
+		MaizeBG="64 89 128 255" // background color of any selected text 
+		TextGlowHover="128 124 120 255"
+		TextGlowSelected="171 169 166 255"
+		TextGlowHoverSm="128 123 120 255"
+		TextGlowSelectedSm="145 142 140 255"
+
+		NavLabel="158 153 149 255"
+		Label="166 164 161 255"
+		Label2="115 111 108 255"
+		LabelDisabled="138 135 132 255"
+		LabelFocus="199 196 194 255"
+
+		ScrollGlyph="204 198 192 255"  // the color of the scroll bar arrows
+		ScrollGlyphDisabled="77 74 72 255"
+		ScrollGlyphFocus="242 242 242 255"
+
+		ScrollBG="77 74 72 255" // the color of the scroll bar gutter
+
+		HeaderClient="57 53 49 255" // the color of the List box header in the main client window
+		HeaderDialog="95 92 90 255" // the color of the list box header in other windows
+
+		TitleBar="86 81 78 50"
+		TitleBarFocus="176 169 162 50"
+
+		Focus="49 65 89 255"  		// background color of any selected menu or list item
+		Focus2="85	125 171 255"		// background color of view buttons and anything else in focus that needs more 'punch'
+		Focus3="62 92 133 255"		// background color of highlighted friends 
+		FocusGrid="85 146 160 240"  	// background color of any grid item
+		Highlight="81 140 170 120" 	// same as focus
+		Highlight1="204 185 88 255"    // installing hover color
+		Highlight2="181 164 78 255" 	// installing color 
+		Highlight3="173 69 71 255"    	// red for errors, blocked, etc.
+		Highlight5="77 109 140 255" 	// blue 
+		Highlight5a="83 124 166 255" 	// lighter version of highlight5
+		Highlight5b="59 85 98 255" 	// as highlight5 but darker, for non-focused window borders
+
+		BackgroundStartSubtle="20 20 20 155" 
+		BackgroundStartSubtle="31 31 31 45" [$OSX]
+		BackgroundStart="23 22 20 180"
+		BackgroundStartOpaque="36 35 34 255"
+
+		ClientBG="26 25 24 255"
+		DialogBG="56 54 53 255"
+
+		// Used as secure URL text
+		GreenText="0 255 0 255"
+
+		DarkClientBG="36 35 34 255"
+		DarkDialogBG="56 54 53 255"
+		DarkClientBGTransparent="36 35 34 19"
+		DarkDialogBGTransparent="56 55 53 170"
+
+		GameDetailsBlueTransparent="89 134 179 160"
+		GameDetailsGreenTransparent="126 166 75 160"
+		GameDetailsRedTransparent="173 69 71 160"
+
+		GameDetailsBlue="89 134 179 255"
+		GameDetailsGreen="126 166 75 255"
+		GameDetailsRed="173 69 71 255"
+
+		PropertySheetBG="74 72 70 255"
+		InteriorColor="64 62 60 255"
+		
+		DialogBorder="119 117 115 255" // border color around any dialog
+		
+		FillBG1="64 62 60 255" //gradient colors
+		FillBG2="71 69 67 255"
+		
+		MenuBG1="92 89 86 255" //gradient colors
+		MenuBG2="61 59 58 255"
+		
+		Divider="107 104 101 255"
+		SuperDivider="66 72 80 255"
+		DarkImageBorder="46 50 58 255"
+		DarkImageOverlay="0 0 0 80"
+		
+		inbox_active "158 194 29 255"
+		inbox_active2 "155 199 9 255"
+		inbox_active4 "122 145 71 255"
+		inbox_active5 "85 102 47 255"
+
+		inbox_inactive "38 38 37 255"
+		inbox_inactive2 "142 194 12 255"
+		inbox_inactive4 "122 145 71 255"
+		inbox_inactive5 "74 102 29"
+
+		parental_lock_active1 "138 175 6 255"
+		parental_lock_active2 "49 49 49 255"
+		parental_lock_active4 "122 145 71 255"
+		parental_lock_active5 "85 102 47 255"
+		green5 "126 166 75 255"
+		green6 "92 126 16 255"
+		green7 "62 90 22 255"
+		green8 "38 48 2 255"
+
+
+		launch0 "119 215 250 255"
+		launch1 "83 172 204 255"
+		launch2 "54 125 153 255"
+
+
+		parental_lock_inactive1 "154 49 48 255"
+		parental_lock_inactive2 "189 79 79 255"
+		parental_lock_inactive3 "215 90 90 255"
+		parental_lock_inactive4 "146 72 71 255"
+		parental_lock_inactive5 "103 48 47 255"
+		red6="38 1 1 255"
+
+		support_lock_ack1 "187 157 47 255"
+		support_lock_ack2 "193 166 67 255"
+		AnnouncementBlue="61 146 175 255"
+
+		// colors pulled from steamscheme.res
+		"ClayBG"			"70 70 70 255"
+		"ClayButtonBG"			"87 88 88 255"
+		"ClayEnabled"			"85 88 82 255"
+		"ClayKeyFocus"			"89 92 77 255"
+		"ClayMouseDown"			"85 85 85 255"
+		"ClayDisabledText"		"128 134 126 255"
+		"ClayDisabledText"		"128 128 128 255"
+		"ClayLightGreen"		"173 181 168 255"	// frame button (close X) etc
+		"ClayDimLightGreen"		"166 172 162 255"	// frame button and title without focus etc
+		"LightClayBG"			"104 106 101 255"	// property sheet interior, active tab
+		"LightClayButtonBG"		"125 128 120 255"	// buttons on property sheet interior, active tab
+		"DarkClayBG"			"47 49 45 255"		// shadow
+		"p_ClayMouseDown"   "94 94 94 255"
+		"ClaySheetBottom"   "92 90 87 255"
+		"MaizeBG"     "145 134 60 255"  // background color of any selected text or menu item
+		"GreenBG"     "76 88 68 255"
+		"LightGreenBG"      "90 106 80 255"   // darker background color
+		"DarkGreenBG"     "62 70 55 255"    // background color of text edit panes (chat, text Entries, etc.)
+		"LightGrayBG"     "121 126 121 255"
+		"GrayBG"      "77 73 71 255"
+		"GrayBG2"     "39 37 35 255"
+		"TempGradientTop" "53 52 51 255"
+
+		white="255 255 255 255"
+		transparentBlack="0 0 0 128"
+		black="0 0 0 255"
+		none="0 0 0 0"
+		testColor="255 0 255 255"
+
+		// scheme-specific colors
+		offwhite="216 222 211 255"
+		dullgreen="216 222 211 255"
+		maize="196 181 80 255"
+
+		LightGrayBG="121 126 121 255"
+		GrayBG="73 78 73 255"
+		GrayBG2="82 89 78 255"
+
+		SecBG=GrayBG2
+
+		DisabledText1="117 128 111 255"	// disabled text
+		DisabledText2="40 46 34 255"	// overlay color for disabled text (to give that inset look
+
+		NotificationBodyText="White"
+
+		// button state text colors
+		Normal="143 146 141 255"
+		Over="196 181 80 255"	// same as Maize
+		Down="35 36 33 255"
+
+		// background colors
+
+		// titlebar colors
+		TitleDimText="136 145 128 255"
+		TitleBG="TestColor"
+		TitleDimBG="TestColor"
+
+		// border colors
+		BorderBright="128 128 128 255"	// the lit side of a control
+		BorderDark="40 46 34 255"	// the dark/unlit side of a control
+		BorderSelection="0 0 0 255"	// the additional border color for displaying the default/selected button
+
+		ButtonBorder="7 4 12 255"
+
+		ButtonBorderDisabled="53 53 55 255"
+		PageButtonBorderDisabled="79 80 79 255"
+
+		ButtonBorderCorner="45 46 47 255"
+		PageButtonBorderCorner="65 66 66 255"
+
+		ButtonBorderCornerSelected="160 154 100 255"
+
+		ButtonBorderCornerDisabled="61 61 62 255"
+		PageButtonBorderCornerDisabled="91 93 89 255"
+
+		PageTabBorder="116 116 116 255"
+
+		PageTabBorderCorner="93 93 93 255"
+
+		PageCheckButtonTextDisabled="40 46 34 255"
+
+		ScrollbarCorner="100 101 97 255"
+
+		PageComboboxCorner="50 49 53 255"
+
+		TextEntryCorner="45 44 48 255"
+
+		ListpanelBackground="37 37 37 255"
+
+		ListpanelCorner="76 76 76 255"
+
+		RichTextCorner="21 20 24 255"
+
+		MenuDivider="76 78 75 255"
+
+		GameslistFadingBG="61 66 61 255"
+
+		GameslistText="230 236 224 255"
+
+		DragDrop.DragFrame        "255 255 255 192"
+		DragDrop.DropFrame        "150 255 150 255"
+
+		Frame.ClientInsetX        10
+		Frame.ClientInsetY        35
+		Frame.FocusTransitionEffectTime   "0"     // time it takes for a window to fade in/out on focus/out of focus
+		Frame.TransitionEffectTime      "0.0"      // time it takes for a window to fade in/out on open/close
+		Frame.OnDragAlphaDelayTime      "0.15"      // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
+		Frame.OnDragAlphaMultiplier     "1.0"     // multiplier applied to alpha while dragging a frame
+		Frame.AutoSnapRange         "6"
+		Frame.UsesAlphaBlending       1
+		FrameSystemButton.Icon        "resource/icon_steam"
+		FrameSystemButton.DisabledIcon    "resource/icon_steam_disabled"
+
+		Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
+		Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
+		Notifications.SlideDirection    "None"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
+		Notifications.FadeInTime      "0.45"    // Controls the time it takes to slide/fade into view
+		Notifications.FadeOutTime     "0.45"    // Controls the time it takes to slide/fade out of view
+		Notifications.DisplayTime     "6.0"     // Controls the length of time at steady state after fade in and before fade out
+		Notifications.StackSize       "3"     // Controls how many panels we will stack before background queuing
+
+		ListPanel.TextColor       White
+		ListPanel.BgColor       GrayBG
+		ListPanel.SelectedTextColor     White
+		ListPanel.SelectedBgColor     DarkGreenBG
+		ListPanel.SelectedOutOfFocusBgColor   DarkGreenBG
+		ListPanel.DisabledTextColor     LightGreenBG
+		ListPanel.DisabledSelectedTextColor   DarkGreenBG
+		ListPanel.EmptyListInfoTextColor    OffWhite
+		ListPanel.PerPixelScrolling     1
+		ListPanel.PostSectionLeading	10
+
+		// Default tooltip delay pops fast, but lets the mouse pass through without popping
+		// Anchor=Cursor makes it stick to initial pop location like windows implementation.
+		// Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside
+		// the parent panel (useful for icon sized items)
+		Tooltip.Delay=75
+		Tooltip.Anchor=Cursor
+
+		
+		WizardPanel.HeaderBGColor     GreenBG
+
+		Menu.TextInset          "6"
+		
+		PropertySheet.TransitionEffectTime    "0"     // time to change from one tab to another
+		PropertySheet.TabGap        3
+		PropertySheet.FlashTabColor	maize
+
+		RichText.InsetX         6
+		RichText.InsetY         6
+
+		ScrollBar.Wide          21
+		
+		SectionedListPanel.CollapserWidth   16
+		
+		MessageBox.ButtonHeight		24
+		
+		TextEntry.IMEBGColor        "225 225 225 255"
+		TextEntry.IMEFGColor        "black"
+		
+
+		// Friends List colors
+		Friends.InGameColor       "176 249 80 255"
+		Friends.OnlineColor       "142 202 254 255"
+		Friends.OfflineColor      "152 157 155 255"
+		Friends.PanelDefault      "58 58 58 255"
+		Friends.PanelOver       "87 87 87 255"
+		Friends.PanelSelected     "17 17 17 255"
+		Friends.SectionHeader     "127 135 121 255"
+		Friends.NoAvatarOver      "White"
+		Friends.IgnoredColor      "248 108 79 255"
+
+		ChatDialog.URLColor       "white"
+		ChatOwnTextColor        "160 160 160 255"
+		ChatGradientTop         "39 39 39 255"
+		ChatGradientBottom        "102 104 99 255"
+
+		AchievementPopup.TitleColor   "white"
+		AchievementPopup.DescriptionColor "180 180 180 255"
+		
+		GiftOnlyInfo.ImagePanelColor  "GrayBG"    
+
+		HTML.SearchInsetY 5
+		HTML.SearchInsetX 10
+		HTML.SearchWide 348
+		HTML.SearchTall 38
+		HTML.SearchAnimationTime 0.25
+
+		HTML.IMEInsetY 5
+		HTML.IMEInsetX 10
+		HTML.IMEWide 348
+		HTML.IMETall 38
+		HTML.IMEAnimationTime 0.25
+
+		html.secureurl "126 166 75 255"
+		html.insecureurl "173 69 72 255"
+
+	}	
+
+	styles
+	{
+		downarrow
+		{
+			image="graphics/icon_down_default"    
+		}
+
+		downarrow:hover
+		{
+			image="graphics/icon_down_hover"
+			render_bg
+			{
+				
+				//background
+				0="fill( x0 + 5, y0 + 4, x1 - 2, y1 - 4, buttonfaceactive )"
+
+				//lines around
+				1="fill(x0 + 4, y0 + 5, x0 + 5, y1 - 5, buttonfaceactive )"  //left
+				2="fill(x1 - 2, y0 + 5, x1 - 1, y1 - 5, buttonfaceactive )"  //right
+			}
+		}
+
+		uparrow
+		{
+			image="graphics/icon_up_default"    
+		}
+
+		rightarrow
+		{
+			image="graphics/icon_right_default"   
+		}
+
+		rightarrow:hover
+		{
+			image="graphics/icon_right_hover"    
+		}
+
+		Button
+		{
+			font-family=basefont
+			inset = "4 0 0 0"
+			textcolor = White
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		Button:hover
+		{
+			textcolor=White
+		}
+
+		Button:active
+		{
+			textcolor=White
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+		
+		Button:focus
+		{
+			textcolor=White
+			bgcolor=none
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 2, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 2, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				5="fill( x0, y0, x1, y0 + 1, Black )"  // top
+				6="fill( x0, y1, x1 + 1, y1 + 1, Black )"  // bottom
+				7="fill( x0, y0, x0 + 1, y1, Black )"  // left
+				8"fill( x1, y0, x1 + 1, y1, Black )"  // right
+				
+				9="fill( x0 + 2, y0 + 2, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		Button:disabled
+		{
+			textcolor=ClayDisabledText
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"Page Button"
+		{
+			font-family=basefont
+			font-size=16
+			textcolor=White
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"Page Button:active"
+		{
+			textcolor=White
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"Page Button:focus"
+		{
+			textcolor=White
+			bgcolor=none
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 2, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 2, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				5="fill( x0, y0, x1, y0 + 1, Black )"  // top
+				6="fill( x0, y1, x1 + 1, y1 + 1, Black )"  // bottom
+				7="fill( x0, y0, x0 + 1, y1, Black )"  // left
+				8"fill( x1, y0, x1 + 1, y1, Black )"  // right
+				
+				9="fill( x0 + 2, y0 + 2, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"Page Button:disabled"
+		{
+			textcolor=ClayDisabledText
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+		
+
+		CFriendsListSectionAffordance
+		{
+			inset="0 0 0 0"
+			font-size=16
+			font-weight=400
+			textcolor="White"
+		}
+
+		CFriendsListSectionHeader
+		{
+			bgcolor=none
+			font-family=basefont
+			font-size=16
+			font-size=16 [$OSX]
+			font-weight=400
+			textcolor="White"
+			inset="0 2 0 0"
+			render_bg
+			{
+				0="gradient_horizontal( x0-21, y0+1, x0+230, y1+1, buttonface2, none )"
+			}
+		}
+
+		CFriendPanel
+		{
+			inset="0 2 0 0"
+			bgcolor=none
+			font-family=basefont
+			font-size=16
+			font-size=16 [$OSX]
+			font-weight=400
+			textcolor="White"
+		}
+
+		CheckButton
+		{
+			font-family = basefont
+			font-size=14
+			image = "Graphics/chkUnselStd"
+			textcolor=White
+		}
+
+		CheckButton:selected
+		{
+			image = "Graphics/chkSelStd"    
+		}
+
+		CheckButton:focus
+		{
+			textcolor = Over
+			image = "Graphics/chkUnselFocus"  
+		}
+
+		CheckButton:selected:focus
+		{
+			image = "Graphics/chkSelFocus"
+		}
+		
+		CheckButton:disabled
+		{
+			textcolor = ClayDisabledText
+			image = "Graphics/chkUnselDis"
+		}
+
+		CheckButton:selected:disabled
+		{
+			image = "Graphics/chkSelDis"
+		}
+
+		CheckButtonList
+		{
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 2, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1 - 1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+
+		}
+		
+		CheckButtonList:scrollbar
+		{
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=DarkGreenBG
+			render
+			{
+			}
+			render_bg
+			{
+			}
+	  
+		} 
+
+		"Page CheckButtonList"
+		{
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}
+
+			"Page CheckButtonList:scrollbar"
+		{
+			inset="1 1 1 1"
+			textcolor="text2"
+			bgcolor=DarkGreenBG
+			render
+			{
+			}
+			render_bg
+			{
+			}
+
+		}
+		
+		"CheckbuttonList Checkbutton"
+		{textcolor="White"}
+
+		"CheckbuttonList Checkbutton:selected"
+		{textcolor="Over"}		
+
+		ComboBox
+		{
+			bgcolor=DarkGreenBG
+			inset="3 0 0 0"
+			textcolor="White"
+			font-family=basefont
+			font-size=16
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		ComboBox:hover
+		{
+			bgcolor=DarkGreenBG
+			selectedbgcolor="MaizeBG"
+			selectedtextcolor="White"
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		ComboBox:focus
+		{
+			bgcolor=DarkGreenBG
+			selectedbgcolor="MaizeBG"
+			selectedtextcolor="White"
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		ComboBox:focus:hover
+		{
+			bgcolor=DarkGreenBG
+			selectedbgcolor="MaizeBG"
+			selectedtextcolor="White"
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		"Page ComboBox"
+		{
+			bgcolor=DarkGreenBG
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		"Page ComboBox:focus"
+		{
+			bgcolor=DarkGreenBG
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		"Page ComboBox:hover"
+		{
+			bgcolor=DarkGreenBG
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		"Page ComboBox:focus:hover"
+		{
+			bgcolor=DarkGreenBG
+			render
+		{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+		}
+		}
+
+		ComboBoxButton
+		{
+			bgcolor=none
+			image="graphics/icon_down_default"
+			// just draw a single line to divide it from the text
+			render_bg
+			{
+			}
+		}
+
+		ComboBoxButton:hover
+{
+			image="graphics/icon_down_hover"
+			// just draw a single line to divide it from the text
+			render_bg
+			{
+			}
+		}
+
+		ComboBoxButton:focus
+		{
+			bgcolor=none
+			image="graphics/icon_down_focus"
+			// just draw a single line to divide it from the text
+			render_bg 
+			{
+			}
+		}
+
+		ComboBoxButton:focus:hover
+		{
+			bgcolor=none
+			image="graphics/icon_down_default"
+			// just draw a single line to divide it from the text
+			render_bg 
+			{
+			}
+		}
+
+		"Page ComboBoxButton"
+		{
+			bgcolor=none
+			image="graphics/icon_down_default"
+			// just draw a single line to divide it from the text
+			render_bg 
+			{
+			}
+		}
+
+		"Page ComboBoxButton:hover"
+		{
+			image="graphics/icon_down_hover"
+			// just draw a single line to divide it from the text
+			render_bg 
+			{
+			}
+		}
+
+		"Page ComboBoxButton:focus"
+		{
+			bgcolor=none
+			image="graphics/icon_down_focus"
+			// just draw a single line to divide it from the text
+			render_bg 
+			{
+			}
+		}
+
+		"Page ComboBoxButton:focus:hover"
+		{
+			bgcolor=none
+			image="graphics/icon_down_focus"
+			// just draw a single line to divide it from the text
+			render_bg 
+			{
+			}
+		}
+
+		Divider
+		{
+			bgcolor="none"
+			render
+			{
+			    0="fill( x0, y1 - 1, x1, y1, BorderDark )"  //top
+				1="fill( x0, y1, x1, y1 + 1, BorderBright )"  //bottom
+			}
+		}
+
+		Frame 
+		{
+			bgcolor="GreenBG"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+		
+		Frame:FrameFocus
+		{
+			bgcolor="GreenBG"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		FrameBRGripPanel 
+		{
+			image = "Graphics/resizer"
+			inset = "0 0 0 0"
+		}
+
+		FrameBRGripPanel:hover
+		{
+			image = "Graphics/resizer"
+			inset = "0 0 0 0"
+		}
+
+		FrameMinimizeButton
+		{
+			image = "Graphics/Window-Min"
+			inset = "-1 12 7 -2"
+			render_bg
+			{
+			}
+		}
+
+		FrameMinimizeButton:active
+		{
+			image = "Graphics/Window-Min"
+			inset = "-1 12 7 -2"
+			render_bg
+			{
+			}
+		}
+
+		FrameMaximizeButton
+		{
+			image = "Graphics/Window-Max"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+			}
+		}
+
+		FrameMaximizeButton:active
+		{
+			image = "Graphics/Window-Max"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+			}
+		}
+
+		FrameRestoreButton
+		{
+			image = "Graphics/Window-Restore"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+			}
+		}
+
+		FrameRestoreButton:active
+		{
+			image = "Graphics/Window-Restore"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+			}
+		}
+
+		FrameCloseButton
+		{
+			image = "Graphics/Window-Close"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+			}
+		}
+
+		FrameCloseButton:active
+		{
+			image = "Graphics/Window-Close"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+			}
+		}
+
+		FrameMinimizeButton:FrameFocus
+		{
+			image = "Graphics/Window-Min"
+			inset = "-1 12 7 -2"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		FrameMinimizeButton:active:FrameFocus
+		{
+			image = "Graphics/Window-Min"
+			inset = "-1 12 7 -2"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		FrameMaximizeButton:FrameFocus
+		{
+			image = "Graphics/Window-Max"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		FrameMaximizeButton:active:FrameFocus
+		{
+			image = "Graphics/Window-Max"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		FrameRestoreButton:FrameFocus
+		{
+			image = "Graphics/Window-Restore"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		FrameRestoreButton:active:FrameFocus
+		{
+			image = "Graphics/Window-Restore"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		FrameCloseButton:FrameFocus
+		{
+			image = "Graphics/Window-Close"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		FrameCloseButton:active:FrameFocus
+		{
+			image = "Graphics/Window-Close"
+			inset = "0 5 4 -2"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		FrameTitle {
+			font-family = basefont
+			font-size=16
+			padding-left="0"
+			padding-right="72"
+			textcolor = ClayDisabledText
+			inset = "22 6 0 4"
+			render_bg
+			{
+				1="image( x0 + 7, y0 + 6, x1, y1, resource/icon_steam_disabled )" // inside
+			}
+		}
+
+		FrameTitle:FrameFocus {
+			font-family = basefont
+			font-size=16
+			padding-left="0"
+			padding-right="64"
+			textcolor = White
+			inset = "22 6 0 4"
+			render_bg
+			{
+				1="image( x0 + 7, y0 + 6, x1, y1, resource/icon_steam )" // inside
+			}
+		}
+
+		"CFriendsDialog SectionedListPanelInterior"
+		{
+			bgcolor=none
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="Text"
+			selectedtextcolor="White"
+			selectedbgcolor="BorderDark"
+			shadowtextcolor="TextDisabled"	// the color of disabled line items		
+			render
+			{
+				//gradient to obscure content at top of scrolling region 
+
+			}
+			render_bg 
+			{	
+				// background gradient
+
+			}
+		}
+
+		GraphPanel
+		{
+			textcolor=Over
+			bgcolor=DarkGreenBG
+			inset="0 -3 0 0"
+			render_bg 
+			{	
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		HTML
+		{
+			bgcolor="none"
+			inset="1 1 1 1" 
+			render_bg 
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				5="fill( x0, y0, x1 - 1, y1- 1, DarkGreenBG )" // bg
+			}
+		}
+
+		Label
+		{
+			font-family = basefont
+			font-size=14
+			textcolor=White
+			selectedtextcolor=White
+		}
+
+		ListPanel
+		{
+			font-family = basefont
+			textcolor=White
+			bgcolor=none
+			selectedtextcolor = White
+			selectedbgcolor = BorderDark
+			inset="0 0 0 0"
+			render_bg
+			{
+//				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}
+
+		"Page ListPanel"
+		{
+			inset = "1 1 1 1"
+			bgcolor = none
+			render_bg
+			{
+//				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}
+
+		"CGamesListPanel"
+		{
+			font-family=basefont
+			bgcolor="DarkGreenBG"
+			font-size=16
+			font-weight=400
+			textcolor="Text"
+			selectedtextcolor="White"
+			selectedbgcolor="BorderDark"
+			inset="0 0 0 0"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		"GameItem_Uninstalled"
+		{
+		  textcolor="labeldisabled"
+		  selectedtextcolor="White"
+		}
+
+		"GameItem_Uninstalled:hover"
+		{
+			textcolor="White"
+			selectedtextcolor="White"
+		}
+
+		"GameItem_Installed"
+		{
+			textcolor="text"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Installed:hover"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+			"GameItem_Shortcut"
+		{
+			textcolor="text"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Shortcut:hover"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Mod"
+		{
+			textcolor="text"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Mod:hover"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Updating"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Updating:hover"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Updating:selected"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Decrypting"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Decrypting:hover"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Decrypting:selected"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+			"GameItem_Syncing"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Syncing:hover"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+
+		"GameItem_Syncing:selected"
+		{
+			textcolor="white"
+			selectedtextcolor="white"
+		}
+		
+
+		"GameColumn_BigText"
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=700
+			textcolor="text"
+		}
+		
+		ListPanelCheckBox
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			image="graphics/chkUnselStd_Sm"
+			inset="0 4 0 0"
+		}
+
+		
+		ListPanelCheckBox:selected
+		{
+			image="graphics/chkSelStd_Sm"    
+		}
+
+		ListPanelCheckBox:focus
+		{
+			textcolor="Text"
+			bgcolor=none
+			image="graphics/chkUnselFocus_Sm"  
+		}
+
+		ListPanelCheckBox:selected:focus
+		{
+			textcolor="Text"
+			render_bg {}
+			bgcolor=none
+			image="graphics/chkSelFocus_Sm"
+		}
+
+		ListPanelCheckBox:disabled
+		{
+			textcolor="TextDisabled"
+			bgcolor=none
+			image="graphics/chkUnselDis_Sm"
+		}
+
+		ListPanelCheckBox:disabled:select
+		{
+			textcolor="TextDisabled"
+			bgcolor=none
+			//!! bug - this needs to look disabled
+			image="graphics/chkUnselDis"
+		}
+
+		"ListPanelColumnheader ListPanelCheckBox"
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			image="graphics/chkUnSelFocus_Sm"
+			inset="4 0 0 8"  
+		}
+
+		"ListPanelColumnHeader ListPanelCheckBox:selected"
+		{
+			inset="4 0 0 0"
+			image="graphics/chkUnSelStd_Sm"    
+		}
+
+		"ListPanelColumnheader ListPanelCheckBox:focus"
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			image="graphics/chkUnSelFocus_Sm"
+			inset="4 0 0 0"  
+		}
+
+		"ListPanelColumnheader ListPanelCheckBox:selected:focus"
+		{
+			textcolor="White"
+			render_bg {}
+			bgcolor=none
+			image="graphics/chkSelFocus_Sm"
+			inset="4 0 0 0"  
+		}
+
+		ListPanelColumnheader
+		{
+			font-family=basefont
+			font-size=13
+			font-size=13 [$OSX]
+			font-weight=800
+			textcolor="White"
+			bgcolor="none"
+			inset="1 3 0 0"
+
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		ListPanelColumnHeader:hover
+		{
+			textcolor="White"
+		}
+
+		"Csteamrootdialog ListPanelColumnheader"
+		{
+			font-family=basefont
+			font-size=13
+			font-size=13 [$OSX]
+			font-weight=400
+			textcolor="White"
+			font-style="uppercase"
+			bgcolor="none"
+			inset="0 0 0 0"
+			padding-top=1
+
+			render
+			{
+			}
+		}
+
+		"Csteamrootdialog ListPanelColumnHeader:hover"
+		{
+			textcolor="White"
+		}
+
+		"Csteamrootdialog ListPanelSectionCollapser"
+		{
+			inset = "0 0 0 0"
+			bgcolor = none
+			render_bg
+			{
+			}
+		}
+		
+		"CGamesPage_Mini ListPanelSectionCollapser"
+		{
+			inset = "0 0 0 0"
+			bgcolor = none
+			render_bg
+			{
+			}
+		}
+
+		ListPanelColumnSelectButton // the games list column chooser  
+		{
+			inset="2 2 1 0"
+			render
+			{
+				// background fill
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+				
+				6="image( x0 + 6, y0 + 6, x1, y1, graphics/icon_expand )"
+			}   
+			render_bg
+			{
+			}
+		}
+
+		ListPanelColumnSelectButton:hover
+		 {
+			render
+			{
+				// background fill
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+				
+				6="image( x0 + 6, y0 + 6, x1, y1, graphics/icon_expand_over )"
+			}  
+			render_bg
+			{
+			}
+		}
+
+		ListPanelColumnSelectButton:selected
+		{
+			render
+			{
+				 // background fill
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+				
+				6="image( x0 + 6, y0 + 6, x1, y1, graphics/icon_expand_over )"
+			}    
+			render_bg
+			{
+			}
+		}
+
+		"CGamesListPanel ListPanelColumnSelectButton"   
+		{
+			inset="0 0 0 0"
+			bgcolor=none
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+				
+				6="image( x0 + 6, y0 + 6, x1, y1, graphics/icon_expand )"
+			}   
+			render_bg
+			{
+			}
+		}
+
+		"CGamesListPanel ListPanelColumnSelectButton:hover"   
+		{
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+				
+				6="image( x0 + 6, y0 + 6, x1, y1, graphics/icon_expand_over )"
+			}  
+
+		}
+
+		"CGamesListPanel ListPanelColumnSelectButton:selected"   
+		{
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0 + 1, y1 - 1, x1 - 1, y1 + 2, GreenBG )"  // bottom
+				3="fill( x0, y0 + 1, x0 + 1, y1, BorderBright )"  // left
+				4="fill( x1 - 1, y0 + 1, x1, y1, BorderDark )"  // right
+				
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside			
+			    
+				6="image( x0 + 6, y0 + 6, x1, y1, graphics/icon_expand_over )"
+			}  
+		}
+
+		ListPanelDragger
+		{
+			bgcolor="none"
+			render
+			{
+				//fill makes dragger visible
+//				0="fill( x0, y0 + 2, x0 + 1, y1 - 3, LightGrayBG )" // left
+//				1="fill (x0, y0, x0+1, y0+3, LightGrayBG )" //dot
+			}
+		}
+
+		ListPanelInterior
+		{
+			inset="3 0 0 0"
+			font-size=16
+			textcolor="White"
+			bgcolor="none"
+			render
+			{
+			}
+			render_bg
+			{
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}   
+		
+		ListPanelInterior:scrollbar
+		{
+			inset="3 0 0 0"
+			font-size=16
+			textcolor="White"
+			bgcolor="none"
+			render
+			{
+			}
+			render_bg
+			{
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}  
+
+		"CSteamRootDialog ListPanel"
+		{
+			padding-left=2
+			padding-right=2
+		}
+
+		 "Csteamrootdialog ListPanelInterior"
+		{
+			inset="3 0 3 0"
+			bgcolor=none
+			render
+			{
+			}
+			render_bg
+			{
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}  
+
+		"Csteamrootdialog ListPanelInterior:scrollbar"
+		{
+			inset="3 0 -1 0"
+			bgcolor=none
+			render
+			{
+			}
+			render_bg
+			{
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}  
+
+		"Page ListPanelInterior"
+		{
+			inset="3 1 -1 0"
+			font-size=16
+			bgcolor=none
+			render
+			{
+//				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		"Page ListPanelInterior:scrollbar"
+		{
+			inset="3 1 -1 0"
+			font-size=16
+			bgcolor=none
+			render
+			{
+			}
+			render_bg
+			{
+			}
+		}  
+
+		ListPanelSectionHeader
+		{
+			inset="5 0 0 0"
+			textcolor = Over
+			bgcolor=none
+			render
+			{
+			}
+			render_bg
+			{
+			}
+		}  
+
+		ListPanelSectionHeader:hover
+		{
+			textcolor = Over
+			render
+			{
+			}
+			render_bg
+			{
+			}
+		}  
+		
+
+		"ListPanel RichText"
+		{
+			textcolor="Text"
+			font-family=basefont
+			font-size=16
+			bgcolor=none
+			render_bg
+			{
+			} 
+		}
+
+
+		"ListPanel RichText url" 
+		{
+			font-size=16
+			textcolor="Text"
+			font-style=underline
+		}
+
+		"ListPanel RichTextInterior"
+		{
+			bgcolor=none
+			render_bg
+			{
+			} 
+		}
+
+		ListPanelSectionCollapser [!$OSX]
+		{
+			bgcolor=none
+			inset="-4 0 0 0"
+			padding-top=-2
+			padding-bottom=-2
+			image="graphics/icon_expand"
+			render_bg
+			{
+			}
+		}
+
+		ListPanelSectionCollapser:hover [!$OSX]
+		{
+			image="graphics/icon_expand_over" 
+		}
+
+		ListPanelSectionCollapser:selected [!$OSX]
+		{
+			image="graphics/icon_collapse" 
+		}
+
+		ListPanelSectionCollapser:selected:hover [!$OSX]
+		{
+			image="graphics/icon_collapse_over" 
+		}
+
+		MainNav
+		{
+			textcolor="White"
+			selectedtextcolor="Text"
+			bgcolor="none"
+			font-family=basefont
+			font-size=21
+			font-weight=700
+			font-style="uppercase"
+		}
+
+		Menu
+		{
+			bgcolor = DarkGreenBG
+			inset = "1 0 1 1"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, LightGreenBG )"  // top
+				2="fill( x0, y1 - 1, x1, y1, LightGreenBG )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, LightGreenBG )"  // left
+				4="fill( x1 - 1, y0, x1, y1, LightGreenBG )"  // right
+			}
+		}
+
+		MenuBar
+		{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+		}
+		
+		"Page MenuBar"
+		{
+			bgcolor=none
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"MenuBar MenuButton" 
+		{	
+			font-family=basefont
+			font-size=16
+			textcolor="labeldisabled"
+			padding-right=-2
+			inset="1 0 1 0"
+		}
+
+		"MenuBar MenuButton:frameFocus" 
+		{
+			textcolor="White"
+		}
+
+		"MenuBar MenuButton:frameFocus:hover" 
+		{
+			textcolor="White"
+			bgcolor=none
+			render_bg
+			{    
+			}
+		}
+
+		"MenuBar MenuButton:frameFocus:selected" 
+		{
+			textcolor="Over"
+			bgcolor=none
+			render_bg
+			{    
+			}
+		}
+
+		MenuButton
+		{
+			textcolor=White
+			font-family = basefont
+			font-size=16
+		}
+
+		MenuButton:hover
+		{
+			textcolor=Over
+		}
+
+		MenuButton:selected
+		{
+			textcolor=Over
+		}
+
+		MenuSeparator
+		{
+			padding-right=3
+			render_bg
+			{
+				1="fill( x0 , y0 + 1, x1, y1 - 1, MenuDivider )"
+			}
+		}
+			
+		MenuItem
+		{
+			font-family=basefont
+			font-size=16
+			textcolor=White
+			//selectedtextcolor = Over
+		}
+
+		MenuItem:hover
+		{
+			textcolor = White
+			bgcolor = MaizeBG
+		}
+
+		MenuItem:disabled
+		{
+			textcolor = ClayDisabledText
+		}	
+
+		Notification
+		{
+			font-family = basefont
+			font-size=16
+			bgcolor = none
+			render_bg
+			{
+				0="gradient( x0, y0, x1, y0+80, DarkGreenBG, ClientBG )" // inside
+			}
+		}
+		
+		Page
+		{
+			bgcolor="GreenBG"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"CSteamRootDialog Page"
+		{
+			bgcolor="GreenBG"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+		
+		"Page RadioButtonList"
+		{
+			bgcolor="GreenBG"
+		}
+
+		PageTab
+		{
+			font-size=16
+			textcolor = White
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, GreenBG )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		PageTab:selected
+		{
+			font-size=16
+			textcolor = Over
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0 + 1, y1 - 1, x1 - 1, y1 + 2, GreenBG )"  // bottom
+				3="fill( x0, y0 + 1, x0 + 1, y1, BorderBright )"  // left
+				4="fill( x1 - 1, y0 + 1, x1, y1, BorderDark )"  // right
+				
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"PageDragFrame PageTab"
+		{
+			font-size=16
+			font-style=""
+		}
+
+		TabCloseButton
+		{
+			image="Graphics/Window-Close"
+			inset="-6 0 0 0"
+			render_bg
+			{
+			}
+		}
+
+		Panel
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="Text"
+			bgcolor="none"
+		}
+
+		ProgressBar
+		{
+			bgcolor = DarkGreenBG
+			textcolor = Over
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		"Page ProgressBar"
+		{
+			bgcolor = DarkGreenBG
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		PropertyPage
+		{
+			bgcolor="PropertySheetBG"
+		}
+
+		"CFriendsDialog PropertySheet"
+		{
+			bgcolor="none"
+		}
+
+		RadioButton
+		{
+			font-family = basefont
+			textcolor = White
+			image = "Graphics/radUnselStd"
+		}
+
+		RadioButton:selected
+		{
+			image = "Graphics/radSelStd"  
+		}
+
+		RadioButton:focus
+		{
+			textcolor = White
+			image = "Graphics/radSelFocus"
+		}
+
+		RadioButton:selected:focus
+		{
+			textcolor = Over
+			image = "Graphics/radSelFocus"
+		}
+
+		RadioButton:disabled
+		{
+			textcolor = ClayDisabledText
+			image = "Graphics/radUnselDis"
+		}
+
+		RadioButton:selected:disabled
+		{
+			image = "Graphics/radSelDis"
+		}
+
+		RadioButtonList
+		{
+			bgcolor="DarkGreenBG"
+			inset="-2 0 0 0"
+
+			render
+			{
+			// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+			// single pixel fills in the corners
+			}
+		}
+
+		RichText
+		{
+			bgcolor="none"
+			textcolor="White"
+			selectedtextcolor="White"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			inset="0 -1 0 0"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}
+
+		RichTextInterior 
+		{
+			bgcolor=none
+		}
+
+		// style of links in a rich text control
+		"RichText url"
+		{
+			font-size=16
+			textcolor="White"
+			selectedtextcolor="White"
+			font-style=underline
+		}
+
+		"RichText url:hover"
+		{
+			textcolor="White"
+		}
+
+
+		"CFriendPanel RichText URL" 
+		{
+			textcolor="White"
+			font-style=underline
+			font-size=16
+		}
+
+		// style of bold text in a rich text control
+		"RichText bold"
+		{
+			font-size=16
+			font-weight=1000
+		}
+
+		"RichText emphasis"
+		{
+			font-size=16
+			font-style=italic
+		}
+
+		Scrollbar
+		{
+			bgcolor=none
+			inset = "0 1 4 3"
+		}
+		
+		Scrollbar.Horizontal
+		{
+			bgcolor=none
+			inset = "0 1 1 3"
+		}
+
+		Scrollbarbutton
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				//Up Arrow
+				10="fill( x0 + 8, y0 + 5, x0 + 9, y0 + 6, BorderBright )"
+				11="fill( x0 + 7, y0 + 6, x0 + 10, y0 + 7, BorderBright )"
+				12="fill( x0 + 6, y0 + 7, x0 + 11, y0 + 8, BorderBright )"
+				13="fill( x0 + 5, y0 + 8, x0 + 12, y0 + 9, BorderBright )"
+			}
+		}
+
+		Scrollbarbutton.down
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				//Down Arrow
+				10="fill( x0 + 8, y0 + 9, x0 + 9, y0 + 10, BorderBright )"
+				11="fill( x0 + 7, y0 + 8, x0 + 10, y0 + 9, BorderBright )"
+				12="fill( x0 + 6, y0 + 7, x0 + 11, y0 + 8, BorderBright )"
+				13="fill( x0 + 5, y0 + 6, x0 + 12, y0 + 7, BorderBright )"
+			}
+		}
+		
+		Scrollbarbutton.left
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				//Left Arrow
+				10="fill( x0 + 9, y0 + 4, x0 + 10, y0 + 11, BorderBright )"
+				11="fill( x0 + 8, y0 + 5, x0 + 9, y0 + 10, BorderBright )"
+				12="fill( x0 + 7, y0 + 6, x0 + 8, y0 + 9, BorderBright )"
+				13="fill( x0 + 6, y0 + 7, x0 + 7, y0 + 8, BorderBright )"
+			}
+		}
+		
+		Scrollbarbutton.right
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				//Right Arrow
+				10="fill( x0 + 6, y0 + 4, x0 + 7, y0 + 11, BorderBright )"
+				11="fill( x0 + 7, y0 + 5, x0 + 8, y0 + 10, BorderBright )"
+				12="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 9, BorderBright )"
+				13="fill( x0 + 9, y0 + 7, x0 + 10, y0 + 8, BorderBright )"
+			}
+		}
+
+		ScrollBarHandle
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		"SliderHoriz"  //horizontal scrollbar thumb
+		{
+
+			bgcolor=GreenBG
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+		
+		"SliderHoriz:hover"
+		{
+
+			bgcolor=GreenBG
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		"SliderHoriz:active"
+		{
+			bgcolor=GreenBG
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+		ScrollBarSlider // gutter
+		{
+			bgcolor="LightGreenBG"
+			inset="0 0 0 0"
+			render_bg
+			{
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightGreenBG )" // inside
+			}
+		}
+
+		ScrollBarSliderHoriz // gutter
+		{
+			bgcolor="none"
+			render_bg
+			{
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightGreenBG )" // inside
+			}
+		}
+
+		"GamesPage_Details ListPanel ScrollBarSlider" // gutter in games list detail view 
+		{
+			bgcolor="LightGreenBG"
+			render_bg
+			{
+			}
+		}
+
+		ScrollBarSlider:disabled 
+		{
+			bgcolor="none"
+			render_bg
+			{
+			}
+		}
+
+		"HTML ScrollBar"
+		{
+			bgcolor="none"
+			render_bg
+			{ 
+				0="fill(x0,y0,x1 - 1,y1 - 1, almostblack)"
+			}
+		}
+		"HTML ScrollBar.Horizontal"
+		{
+			bgcolor="none"
+			render_bg
+			{ 
+				0="fill(x0,y0,x1+25,y1, almostblack)"
+			}
+		}
+		
+		"HTML ScrollBarSlider.Horizontal" 
+		{
+			bgcolor=none
+			render_bg
+			{
+				//background fill
+				0="gradient_horizontal( x0 + 6, y0 + 5, x0 + 200, y1 - 2, buttonborderdisabled, none)"
+			
+				//lines around
+				1="fill( x0 + 5, y0 + 6, x0 + 6, y1 - 3, buttonborderdisabled )"  // top
+			}
+
+		}
+
+		"HTML SliderHoriz"
+		{
+			bgcolor=none
+			render_bg
+			{
+			}
+		}
+
+		SectionedListPanel
+		{
+			bgcolor="propertysheetbg"
+			inset="0 0 0 0"  
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="Text"
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+			bgcolor="none"
+			render_bg 
+			{
+				// lines around
+				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+
+				// single pixel fills in the corners
+				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+					11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+					12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+					13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+					14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+					15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+					16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+					17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+					18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+
+				// background gradient
+				0="gradient( x0 + 1, y0 + 1, x1, y0 + 1, Propertysheetbg, BackgroundStartOpaque)"
+			}
+		}
+
+		"CFriendsDialog SectionedListPanel"
+		{
+			bgcolor="none"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="Text"
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+			render_bg 
+			{
+				// background fill
+				0="gradient( x0 + 1, y0, x1 - 1, y0 + 140, dialogbg, almostblack )"
+				1="fill( x0 + 1, y0 + 140, x1 - 1, y1-1, almostblack )"
+
+				//lines around, special due to tabs at top
+				2="gradient( x1 - 1, y0 -1, x1, y1 -1, dialogbg, ButtonBorderDisabled )"  // right
+				3="gradient( x0, y0, x0 + 1, y1 - 2, dialogbg, ButtonBorderDisabled )"  // left
+
+				//single pixel fills
+				4="fill( x0, y1-1, x0 + 1, y1, dialogbg )"
+				5="fill( x1-1, y1-1, x1, y1, dialogbg )"
+			}
+		}
+
+		SectionedlistpanelCollapser
+		{
+			bgcolor=none
+			inset="2 1 0 0"
+			image="graphics/icon_expand"
+			render_bg
+			{
+			}
+		} 
+
+		SectionedListPanelCollapser:hover
+		{
+			image="graphics/icon_expand_over"
+		}
+
+		SectionedListPanelCollapser:selected
+		{
+			image="graphics/icon_collapse"
+		}
+
+		SectionedListPanelCollapser:selected:hover
+		{
+			image="graphics/icon_collapse_over"
+		}
+
+		Slider
+		{
+			font-family=basefont
+			font-size=10
+			font-weight=400
+			textcolor="White"
+			font-style=uppercase
+		}
+
+		Slider:focus
+		{
+			textcolor="Text"  
+		}
+
+		StatusLabel
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="labelfocus"
+			font-style=uppercase
+		}
+
+		StatusLabel:hover
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			font-style=uppercase
+		}
+		
+
+		TextEntry
+		{
+			font-family=basefont
+			font-size=16
+			bgcolor=DarkGreenBG
+			textcolor = White
+			inset = "4 0 4 0"
+			selectedbgcolor = MaizeBG
+			selectedtextcolor="White"
+			shadowtextcolor = White
+			render
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				// single pixel fills in the corners
+			}
+		}
+		
+		"Page TextEntry"
+		{
+			font-family=basefont
+			font-size=16
+			textcolor=White
+			selectedbgcolor=MaizeBG
+			selectedtextcolor=White
+			bgcolor=DarkGreenBG
+			render
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+				// single pixel fills in the corners
+			}
+		}
+
+		TextEntry:focus
+		{
+			textcolor=White
+			bgcolor=DarkGreenBG
+			render
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				// single pixel fills in the corners
+			}
+		}
+
+		"Page TextEntry:focus"
+		{
+			textcolor=White
+			bgcolor=DarkGreenBG
+			render
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				// single pixel fills in the corners
+			}
+		}
+
+		TextEntry:disabled
+		{
+			bgcolor=GreenBG
+			textcolor=ClayDisabledText
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+				// single pixel fills in the corners
+			}
+		}
+
+		// The 'empty' style is used for 'hint text' in text entry fields.
+		// If the text box does not have focus and does not have content, a
+		// hint text property will be shown with this style. This is comment
+		// to pre-fill to box with something like 'Search' that goes away when active
+		TextEntry:empty
+		{
+			font-style=italic
+			textcolor=LabelDisabled
+		}
+
+		TextEntryLarge
+		{
+			font-family=basefont
+			font-size=18
+			textcolor="White"
+			inset = "4 0 8 0"
+			font-weight=400
+			bgcolor="DarkGreenBG"
+			selectedbgcolor = MaizeBG
+			shadowtextcolor = White
+			shadowtextcolor="Text"  // this is the cursor color
+			render
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		TextEntryLarge:focus
+		{
+			textcolor="White"
+			render
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		TextEntryLarge:disabled
+		{
+			textcolor="ClayDisabledText"
+			bgcolor="GreenBG"
+			render
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}     
+		}
+
+		TextEntryURL
+		{
+			font-family=basefont
+			font-size=16
+			textcolor="text"
+			font-weight=400
+			bgcolor="none"
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+			shadowtextcolor="Text"	// this is the cursor color
+			inset-left=0
+			inset-top=-1
+			render
+			{
+			}
+		}
+
+		TextEntryURL:Hover
+		{
+			textcolor="White"
+			render
+			{
+				// lines around
+				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonFaceDisabled )"  // top
+				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonFaceDisabled )"  // bottom
+				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonFaceDisabled )"  // left
+				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonFaceDisabled )"  // right
+
+				// single pixel fills in the corners
+				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonFaceDisabled )"
+				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonFaceDisabled )"
+				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonFaceDisabled )"
+				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonFaceDisabled )"
+					11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+					12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+					13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+					14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+					15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+					16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+					17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+					18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+			}			
+		}
+
+		ToggleButton
+		{
+			inset="1 0 0 0"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			bgcolor=none
+			render_bg
+			{
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 2, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1 - 1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		ToggleButton:focus
+		{     
+			textcolor="White"
+			bgcolor="ButtonFaceFocus"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		ToggleButton:hover
+		{
+			textcolor="White"
+			bgcolor="ButtonFaceHover"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		ToggleButton:selected
+		{
+			textcolor="Over"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"Page ToggleButton"
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="White"
+			bgcolor=none
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"Page ToggleButton:hover"
+		{
+			textcolor="White"
+			bgcolor="none"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"Page ToggleButton:focus"
+		{
+			textcolor="White"
+			bgcolor="none"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		"Page ToggleButton:selected"
+		{
+			textcolor="Over"	
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		// the background and frame of a tooltip
+		TooltipWindow
+		{
+			bgcolor="DarkGreenBG"
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, LightGreenBG )"  // top
+				2="fill( x0, y1 - 1, x1, y1, LightGreenBG )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, LightGreenBG )"  // left
+				4="fill( x1 - 1, y0, x1, y1, LightGreenBG )"  // right
+			}
+		}
+
+		// body text inside a tooltip
+		"TooltipWindow Label"
+		{
+			padding-left=4
+			textcolor="White"
+		}
+
+		// headline text inside a tooltip
+		tooltip_headline
+		{
+			textcolor="White"
+			padding-left=4
+			padding-top=1
+			padding-bottom=0
+			font-weight=1000   		
+		}
+
+		TreeNode
+		{
+			bgcolor=none
+			render_bg
+			{
+			}
+		}
+
+		TreeNodeImage
+		{
+			bgcolor=none
+		}
+
+		TreeViewSubPanel
+		{
+			bgcolor=DarkGreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+//				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+//				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+		TreeNodeText
+		{
+			font-family=basefont
+			font-size=14
+			textcolor="Text"
+			selectedtextcolor="White"
+			selectedbgcolor="BorderDark"
+			bgcolor=none
+			render
+			{
+			}
+			render_bg
+			{
+			}
+		}
+
+		TreeView
+		{
+			render_bg
+			{
+				-1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
+
+				// lines around
+				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
+				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
+				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
+				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
+
+				// single pixel fills in the corners
+				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+					11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+					12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+					13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+					14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+					15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+					16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+					17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+					18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+	
+			}     
+		}
+
+		URLLabel
+		{
+			textcolor="White"
+			bgcolor="none"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			font-style=underline
+		}
+
+		URLLabel:Hover
+		{
+			textcolor="White"
+			font-size=16
+		}
+
+		URLLabelSimple
+		{
+			textcolor="labelfocus"
+			bgcolor="none"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			font-style=regular
+		}
+
+		URLLabelSimple [$OSX]
+		{
+			textcolor="labelfocus"
+			bgcolor="none"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			font-style=regular
+		}
+
+		URLLabelSimple:Hover
+		{
+			font-style=underline
+			textcolor="WHITE"
+		}
+
+		// Steam-specific styles
+		CConsoleHistory
+		{
+			font-family="Lucida Console"
+			font-size=10
+			font-family="Menlo" [$OSX]
+			font-size=12 [$OSX]
+			textcolor="White"
+			selectedtextcolor="White"
+		}
+
+		GameColumnHeaderFavorites
+		{
+			image="steam/cached/fav_remove"
+		}
+
+		CGamesListFavoritesToggle
+		{
+			image="steam/cached/fav_addTo"
+		}
+
+		CGamesListFavoritesToggle:hover
+		{
+			image="steam/cached/fav_addTo_ovr"
+		}
+
+		CGamesListFavoritesToggle:selected
+		{
+			image="steam/cached/fav_remove"
+		}
+
+		CGamesListFavoritesToggle:selected:hover
+		{
+			image="steam/cached/fav_remove_ovr"
+		}
+
+		WrapPanel
+		{
+			inset="0 0 0 0"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="Text"
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+			bgcolor=none
+			render_bg
+			{
+				// lines around
+				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+
+				// single pixel fills in the corners
+				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+					11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+					12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+					13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+					14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+					15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+					16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+					17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+					18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+
+				// background gradient
+				8="gradient( x0 + 1, y0 + 1, x1, y0 + 240, propertysheetbg, DarkDialogBG )"
+				9="fill( x0, y0 + 240, x1, y1, DarkDialogBG )"
+			}
+		}
+
+		BackButton
+		{
+		bgcolor=none
+		inset="0 0 0 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_back"
+		}
+
+		BackButton:hover
+		{
+		bgcolor=none
+		inset="0 0 0 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_back_over"
+		}
+
+		BackButton:active
+		{
+		bgcolor=none
+		inset="0 0 0 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+		}
+		image="graphics/icon_button_back_down"
+		}	
+
+		BackButton:disabled
+		{
+		bgcolor=none
+		inset="0 0 0 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right	
+		}
+		image="graphics/icon_button_back_disabled"
+		}
+
+		FullscreenButton
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_controller_bpm"
+		}
+
+		FullscreenButton:hover
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_controller_bpm_over"
+		}
+
+		FullscreenButton:active
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+		}
+		image="graphics/icon_controller_bpm_down"
+		}
+
+		FullscreenButton:disabled
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_controller_bpm_disabled"
+		}
+
+		VRButton
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_vr"
+		}
+
+		VRButton:hover
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_vr_over"
+		}
+
+		VRButton:active
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+		}
+		image="graphics/icon_vr_down"
+		}
+
+		VRButton:disabled
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_vr_disabled"
+		}
+
+		VRButtonExit
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_vr_happy"
+		}
+
+		VRButtonExit:hover
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_vr_happy_over"
+		}
+
+		VRButtonExit:active
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+		}
+		image="graphics/icon_vr_happy_down"
+		}
+
+		VRButtonExit:disabled
+		{
+		inset="-2 0 2 0"
+		bgcolor=none
+		render_bg=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_vr_disabled"
+		}
+
+		ForwardButton
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_forward"
+		}
+
+		ForwardButton:hover
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right	
+		}
+		image="graphics/icon_button_forward_over"
+		}
+
+		ForwardButton:active
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+		}
+		image="graphics/icon_button_forward_down"
+		}
+	
+		ForwardButton:disabled
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right	
+		}
+		image="graphics/icon_button_forward_disabled"
+		}
+
+		HomeButton
+		{
+		bgcolor=none
+		inset="-5 0 0 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right	
+		}
+		image="graphics/icon_button_home"
+		}
+
+		HomeButton:hover
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_button_home_over"
+		}
+	
+		HomeButton:active
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_button_home_down"
+		}
+	
+		HomeButton:disabled
+		{
+		bgcolor=none
+		render_bg={}
+		image="graphics/icon_button_home_disabled"
+		}
+	
+		ReloadButton
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_reload"
+		}
+
+		ReloadButton:hover
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_reload_over"
+		}
+
+		ReloadButton:active
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+		}
+		image="graphics/icon_button_reload_down"
+		}
+
+		ReloadButton:disabled
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_reload_disabled"
+		}
+
+		StopButton
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_stop"
+		}
+
+		StopButton:hover
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_stop_over"
+		}
+
+		StopButton:active
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+		}
+		image="graphics/icon_button_stop_down"
+		}
+
+		StopButton:disabled
+		{
+		bgcolor=none
+		inset="1 0 -1 0"
+		render_bg=
+		{
+//			1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+//			2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+//			3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+//			4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+		}
+		image="graphics/icon_button_stop_disabled"
+		}
+
+		gamedetails-headerlabel
+		{
+			font-size="17"
+			font-style="normal"
+			font-family=basefont
+			font-weight=700
+			textcolor="Text"
+			font-style="uppercase;"
+		}
+
+		gamedetails-headerlabel-red
+		{
+			font-size="17"
+			font-style="normal"
+			font-family=basefont
+			font-weight=700
+			textcolor="GameDetailsRed"
+			font-style="uppercase;"
+		}
+
+		gamedetails-headerlabel-green
+		{
+			font-size="17"
+			font-style="normal"
+			textcolor="GameDetailsGreen"
+			font-family=basefont
+			font-weight=700
+			font-style="uppercase;"
+		}
+
+		gamedetails-headerlabel-blue
+		{
+			font-size="17"
+			font-style="normal"
+			textcolor="GameDetailsBlue"
+			font-family=basefont
+			font-weight=700
+			font-style="uppercase;"
+		}
+	
+		// styles for text used in RichText controls in various places
+	
+		console_text_error
+		{
+			textcolor="Highlight3"
+			font-size=14
+			font-family="Menlo" [$OSX]
+			font-size=16 [$OSX]
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+		}
+	
+		console_text
+		{
+			font-family="Lucida Console"
+			font-size=10
+			font-family="Menlo" [$OSX]
+			font-size=12 [$OSX]
+			textcolor="text"
+			selectedtextcolor="White"	
+			selectedbgcolor="MaizeBG"
+		}
+	
+		friends_chat_text
+		{
+			textcolor = white
+		}
+	
+		friends_chat_text_self
+		{
+			textcolor = ChatOwnTextColor
+		}
+	
+		friends_chat_event
+		{
+			textcolor = LightGrayBG
+		}
+
+		friends_chat_bright_event
+		{
+			textcolor = white
+		}
+
+		friends_chat_url
+		{
+			font-style = underline
+		}
+	
+		friends_chat_name_ingame
+		{
+			textcolor = Friends.InGameColor
+		}
+	
+		friends_chat_self
+		{
+			textcolor = ChatOwnTextColor
+		}
+	
+		friends_chat_name
+		{
+			textcolor = Friends.OnlineColor
+		}
+	
+		friends_chat_accountid
+		{
+			textcolor = ChatOwnTextColor
+		}
+	
+		friends_chat_securitylink
+		{
+			textcolor = LightGrayBG
+			font-style = underline
+			font-weight=1000
+		}
+
+		friends_offline
+		{
+			textcolor="Friends.OfflineColor"
+		}
+
+		friends_online
+		{
+			textcolor="Friends.OnlineColor"
+		}
+
+		friends_ingame
+		{
+			textcolor="Friends.InGameColor"
+		}
+
+		friends_ignored
+		{
+			textcolor="Friends.IgnoredColor"
+		}
+	
+		Chat_MenuButton_withChrome
+		{
+			render_bg
+			{
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 1, ButtonBorder )"  // top
+				2="fill( x0 + 1, y1 - 1, x1 - 1, y1, ButtonBorder )"  // bottom
+				3="fill( x0, y0 + 1, x0 + 1, y1 - 1, ButtonBorder )"  // left
+				4="fill( x1 - 1, y0 + 1, x1, y1 - 1, ButtonBorder )"  // right
+
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, ClayEnabled )" // inside
+
+				6="fill( x0+1, y0+1, x0+2, y0+2, ButtonBorderCorner )"  // top-left
+				7="fill( x1-2, y0+1, x1-1, y0+2, ButtonBorderCorner )"  // top-right
+				8="fill( x0+1, y1-2, x0+2, y1-1, ButtonBorderCorner )"  // bottom-left
+				9="fill( x1-2, y1-2, x1-1, y1-1, ButtonBorderCorner )"  // bottom-right
+			}
+		}
+	
+		Chat_MenuButton_withChrome::disabled
+		{
+			textcolor="LabelDisabled"
+			render_bg
+			{     
+				// background fill
+				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
+
+				// lines around
+				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, buttonborderdisabled )"  // top
+				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+
+				// single pixel fills in the corners
+				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+					11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+					12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+					13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+					14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+					15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+					16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+					17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+					18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+			}
+		}
+
+
+		// used in friends tooltip and friends list for overriding regular styles with custom colors
+
+   	TabPageCloseButton
+   	{
+   		padding-right=16
+   	}
+
+		SuperNavMenu
+		{
+			bgcolor=DarkGreenBG
+			inset="1 0 1 1"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, LightGreenBG )"  // top
+				2="fill( x0, y1 - 1, x1, y1, LightGreenBG )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, LightGreenBG )"  // left
+				4="fill( x1 - 1, y0, x1, y1, LightGreenBG )"  // right
+			}
+		}
+
+		SuperNavMenuItem
+		{
+			font-family = basefont
+			font-size=16
+			textcolor=White
+			//selectedtextcolor = Over
+		}
+
+		SuperNavMenuItem:selected
+		{
+			textcolor="White"
+		}
+
+		SuperNavMenuItem:hover
+		{
+			textcolor = White
+			bgcolor = MaizeBG
+		}
+
+		SuperNavMenuDivider
+		{
+			render_bg
+			{
+				1="fill( x0 , y0 + 1, x1, y1 - 1, SuperDivider )"  // line
+			}
+		}
+	
+		html-findbar
+		{
+			font-family=basefont
+			font-size=16
+			textcolor="text2"
+			font-weight=400
+			bgcolor="GreenBG"
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+			shadowtextcolor="Text"	// this is the cursor color
+			inset-left=0
+			inset-top=0
+			render
+			{
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+		
+		html-imebar
+		{
+			font-family=basefont
+			font-size=16
+			textcolor="text2"
+			font-weight=400
+			bgcolor="GreenText"
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+			shadowtextcolor="Text"	// this is the cursor color
+			inset-left=0
+			inset-top=0
+			render
+			{
+				// lines around
+				0="fill( x0 + 1, y0 + 2, x0 + 2, y1 + 1, ButtonBorder )"
+				1="gradient_horizontal( x0 + 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorder, none )" 
+				2="gradient_horizontal( x0 + 2, y1 + 1, x1 - 1, y1 +2, ButtonBorder, none )"
+			}
+		}
+	}
+}

@@ -1,0 +1,573 @@
+"resource/layout/steamrootdialog.layout"
+{
+	controls
+	{
+		"ImageLogo"
+		{
+		"ControlName" 	"Label"
+		style="ClientLogo"
+		zpos=-5
+		}
+	
+		"fullscreen"
+		{
+			"ControlName"		"Button"
+			style="FullscreenButton"
+			command="fullscreen"
+			tooltiptext="#tooltip_view_fullscreen" 
+		}
+		
+		"UINavigatorPanel"
+		{
+			"ControlName"		"CUINavigatorPanel"
+			zpos=-2
+		}	
+		
+		"UIStatusPanel"
+		{
+			"ControlName"		"CUIStatusPanel"
+			zpos=-2
+		}	
+		
+		"MenuBar"
+		{
+			"ControlName"		"MenuBar"
+			style=RootMenu
+		}
+		
+		SupportAlert
+		{
+			ControlName=Button
+			labelText="#Steam_SupportAlert"
+			style="support_alert"
+			textAlignment=center
+			command="OpenSupportAlertWindow"
+		}	
+		
+		InboxButton
+		{
+			ControlName=MenuButton
+			style="inbox_button"
+			textAlignment=west
+		}	
+		
+		add_game
+		{
+			"ControlName"		"MenuButton"
+			labelText="#steam_client_add_game"
+			style="AddGameButton"
+			group=community
+			zpos=-3
+		}
+		
+		frame_title
+		{
+			ControlName=Label
+	
+			style="ClientTitle"
+			"textAlignment"   "west"
+		}
+		
+		account_url
+		{
+			"ControlName"	"URLLabel"
+			"fieldName"		"account_url"
+			"labelText"		"#Steam_Account_Name"
+			"URLText"		"steam://url/StoreAccount/"
+			style="URLLabelSimple"
+		}
+		
+		account_balance_seperator
+		{
+			"ControlName"	"Label"
+			"fieldName"		"account_balance_seperator"
+			"labelText"		"|"
+			style="online_friends"
+		}
+		
+		account_balance
+		{
+			"ControlName"	"URLLabel"
+			"fieldName"		"account_balance"
+			"labelText"		""
+			"URLText"		"steam://url/StoreAccount/"
+			style="URLLabelSimple"
+		}
+		
+		
+		universe_label
+		{
+			ControlName=Label
+			labelText=#Steam_Universe_Internal
+		}
+
+		view_friends
+		{
+			ControlName=URLLabel
+			labelText="#Steam_ViewFriends"
+			"URLText"	"steam://open/friends"
+			style="view_friends"
+			textAlignment=east
+		}
+
+		view_servers
+		{
+			ControlName=URLLabel
+			labelText="#steam_view_servers"
+			"URLText"	"steam://open/servers"
+			style="view_servers"
+			textAlignment=east
+		}
+	}
+	
+	styles
+	{    		
+		
+		ClientLogo
+		{
+			bgcolor=none
+			render_bg={}
+			image="graphics/piston"
+			inset="0 -20 0 0"
+		}
+		
+		RootMenu
+		{
+		}
+
+		AddGameButton {
+			font-family = basefont
+			font-size=16
+			inset = "4 0 0 0"
+			textcolor = White
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+		
+		AddGameButton:hover {
+			textcolor = White
+		}	
+		
+		AddGameButton:selected {
+			textcolor = Over
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
+
+
+		CSteamRootDialog {
+			bgcolor = GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+
+	
+		ClientTitle [!$OSX]
+		{
+			
+		}
+
+		FrameTitle {
+
+		}
+				
+		FrameTitle:framefocus {
+		}
+		
+		view_friends
+		{
+			font-family = basefont
+			inset = "4 0 0 0"
+			textcolor = White
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				//"5"="image( x0, y0 +10, x1, y1, graphics/icon_button_friends )"
+			}
+		}
+
+		view_friends:active
+		{
+			font-family = basefont
+			inset = "4 0 0 0"
+			textcolor="Over"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				//"5"="image( x0, y0 +10, x1, y1, graphics/icon_button_friends_mouseover )"
+			}
+		}
+
+		view_friends:Selected
+		{
+			font-family = basefont
+			inset = "4 0 0 0"
+			textcolor="Over"
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				//"5"="image( x0, y0 +10, x1, y1, graphics/icon_button_friends_mousedown )"
+			}
+		}
+
+		view_servers
+		{
+			font-family = basefont
+			inset = "4 0 0 0"
+			textcolor = White
+			render_bg
+			{
+			"1"		"image( x0, y0 +10, x1, y1, graphics/icon_button_servers )"
+			}
+		}
+
+		view_servers:Hover
+		{
+			font-family = basefont
+			inset = "4 0 0 0"
+			textcolor="Maize"
+			render_bg
+			{
+			"1"		"image( x0, y0 +10, x1, y1, graphics/icon_button_servers_mouseover )"
+			}
+		}
+
+		view_servers:Selected
+		{
+			font-family = basefont
+			inset = "4 0 0 0"
+			textcolor="Maize"
+			render_bg
+			{
+			"1"		"image( x0, y0 +10, x1, y1, graphics/icon_button_servers_mousedown )"
+			}
+		}
+
+		online_friends 
+		{
+			textcolor="label2"
+			bgcolor="none"
+			font-family=basefont
+			font-size=13
+			font-style=regular
+		}
+
+		support_alert
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1+1, support_flag_red )"
+				1="image( x0, y0, x0, y1, graphics/support_flag_left )"
+				2="image( x1, y0, x1, y1, graphics/support_flag_right )"
+				3="image_scale( x0+3, y0, x1, y0+3, graphics/support_flag_top )"
+				4="image_scale( x0+3, y1, x1, y1+3, graphics/support_flag_bottom )"
+			}
+		}
+		
+		support_alert:hover
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=1000
+			font-style=none
+			textcolor=white
+			padding-left=50
+			padding-right=50
+			padding-top=6
+			inset="-8 -3 8 0"
+			render {}
+			render_bg
+			{
+				0="gradient( x0, y0, x1, y1+1, support_hover_red1, support_hover_red2 )"
+				1="image( x0, y0, x0, y1, graphics/support_flag_left_hover )"
+				2="image( x1, y0, x1, y1, graphics/support_flag_right_hover )"
+				3="image_scale( x0+3, y0, x1, y0+3, graphics/support_flag_top_hover )"
+				4="image_scale( x0+3, y1, x1, y1+3, graphics/support_flag_bottom_hover )"
+			}
+		}
+
+		inbox_button [!$OSX]
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=800
+			font-style=none
+			textcolor=white
+
+			padding-top=2
+			padding-right=16
+
+			render {}
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive )"
+			}
+		}
+		
+		inbox_button:hover
+		{
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-24, y0+4, x1, y1, graphics/inbox_notification_inactive )"
+			}
+		}
+
+		inbox_button:selected
+		{
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				6="image( x1-24, y0+4, x1 -2, y1 + 2, graphics/inbox_notification_inactive )"
+			}
+		}
+
+		inbox_button:disabled
+		{
+			textcolor=labeldisabled
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-24, y0+4, x1-2, y1+2, graphics/inbox_notification_inactive_disabled )"
+			}
+		}
+
+		inbox_button_active
+		{
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
+			}
+		}
+
+		inbox_button_active:hover
+		{
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
+			}
+		}
+		inbox_button_active:selected
+		{
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				6="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification )"
+			}
+		}
+
+		inbox_button_active:disabled
+		{
+			render {}
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-21, y0+4, x1-2, y1+2, graphics/inbox_notification_disabled )"
+			}
+		}
+		
+		announcement_button
+		{
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
+			}
+		}
+
+
+		announcement_button:hover
+		{
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenone_notification )"
+			}
+		}
+
+		announcement_button_active
+		{
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				6="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"
+			}
+		}
+
+		announcement_button_active:selected
+		{
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				6="image( x1-24, y0+4, x1 -2, y1 + 1, graphics/updatenew_notification )"
+			}
+		}
+		
+		inboxmenuitem
+		{
+			textcolor=inbox_inactive_text
+		}
+		
+		inboxmenuitem_active
+		{
+			textcolor=inbox_active_text
+		}
+		
+		AccountURLStyle
+		{
+		  padding-top=-4
+		}
+		
+		AccountURLStyle:hover
+		{
+			textcolor=white
+		}
+		
+		AccountURLStyle:selected
+		{
+			textcolor=white
+		}
+	}
+	
+	colors
+	{
+		support_flag_red "169 72 71 255"
+		
+		support_hover_red1 "193 94 93 255"
+		support_hover_red2 "156 64 63 255"
+		
+		inbox_active_text "112 186 36 255"
+		inbox_inactive_text "191 191 191 255"
+
+		inbox_active "92 126 16 255"
+		inbox_active_hover1 "129 176 25 255"
+		inbox_active_hover2 "104 142 19 255"
+
+		inbox_inactive "38 38 37 255"
+		inbox_inactive_hover1 "92 89 86 255"
+		inbox_inactive_hover2 "77 75 72 255"
+
+	}
+	
+	layout
+	{
+		place { control="UINavigatorPanel" width=max height=max margin-right=14 margin-left=12 margin-bottom=14 margin-top=65 }
+		
+		place { control="UIStatusPanel" region=bottom width=max height=max align=bottom margin-bottom=0 }
+		
+		place { control="MenuBar" align=top margin-top=27 margin-left=9 height=24}
+
+		// controls from left to right, otherwise depencencies are broken using end-right
+			
+		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=8 spacing=2 }
+
+		place [!$OSX] { control="fullscreen" align=right y=7 height=24 spacing=0 margin-right=24 margin-top=67 region="bigpicture"}
+
+		place { control="startvr, exitvr" align=right end-right="fullscreen" height=24 margin-right=8 margin-top=74 }
+
+		place { control="AccountButton" align=right end-right="startvr" margin-top=74 margin-right=8 height=24 }
+		place { control="InboxButton" align=right end-right="AccountButton" margin-top=74 margin-right=8 height=24 }
+		place { control="AnnouncementButton" align=right end-right="InboxButton" margin-top=74 margin-right=8 height=24 width=34 }
+		place { control="ParentalLockButton" align=right end-right="AnnouncementButton" margin-top=74 margin-right=8 height=24 width=44 }
+		place [!$OSX] { control="universe_label, EOLAlert, SupportAlert" spacing=8 align=right end-right="ParentalLockButton" margin-top=9 margin-right=8 height=24 }
+
+		region { name=bottom align=bottom width=max height=80 }
+		
+		place [!$OSX] { control="ImageLogo" align=right x=650 y=0 width=340 height=133 margin-top=0 margin-right=0}
+		
+		place { control="add_game" x=21 y=22 region=bottom height=22}
+
+		place { control="view_friends" height=42 width=62 region=bottom align=right dir=right margin-top=12 margin-right=25 }
+//		place { control="view_servers" height=64 width=122 region=bottom align=left dir=right margin-top=43 margin-left=0 }
+	
+ 		// the title bar is missing, so increase the size of the grip
+		place { control="frame_captiongrip" margin=2 width=max height=104 }
+	}
+}

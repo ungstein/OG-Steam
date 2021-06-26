@@ -1,0 +1,934 @@
+"resource/layout/uinavigatorpanel.layout"
+{
+
+	controls
+	{
+		"subnavgroup_library"
+		{
+			"ControlName"		"imagepanel"
+			style="grouper"
+			group="library"
+			zpos="-4"
+		}
+		
+		"PageLoadThrobber"
+		{
+			"ControlName"		"ThrobberImagePanel"
+			style="Panel_transparent"
+			zpos="-2"
+			"group" "url"
+		}
+		"Back"
+		{
+			"ControlName"		"Button"
+			style="BackButton2"
+			command="Back"
+			zpos=-1
+		}
+		"Forward"
+		{
+			"ControlName"		"Button"
+			style="ForwardButton2"
+			command="Forward"
+			zpos=-1
+		}
+		"refresh"
+		{
+			"ControlName"		"Button"
+			command="Refresh"
+			style="ReloadButton2"
+			group="Refresh"
+		}
+		"Stop"
+		{
+			"ControlName"		"Button"
+			command="Stop"
+			style="StopButton2"
+			group="stop"
+		}
+		
+		"Home"
+		{
+			"ControlName"		"Button"
+			command="Home"
+			style="HomeButton2"
+			group="home"
+		}
+		
+		"fullscreen"
+		{
+			"ControlName"		"Button"
+			style="FullscreenButton"
+			command="fullscreen"
+		}
+
+		"label_store"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_store"
+			style="CuinavButton"
+		}
+		
+		"label_library"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_library"
+			style="CuiNavButton"
+		}
+
+		"label_news"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_news"
+			style="CuiNavButton"
+		}
+		"label_community"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_community"
+			style="CuiNavButton"
+		}
+		"label_me"
+		{
+			"ControlName"		"Label"
+			"labelText"		"ME"
+			style="CuiNavButton"
+		}
+		"label_community_friends"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_friends"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_groups"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_groups"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_forums"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_discussions"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_profile"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_profile"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_gamehubs"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_gamehubs"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_workshop"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_workshop"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_greenlight"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_greenlight"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_marketplace"
+		{
+			"ControlName"		"Label"
+			"labelText"		"#steam_nav_marketplace"
+			style="CUINavButton2"
+			group="community"
+			zpos=1
+		}
+		"label_community_new"
+		{
+			"ControlName"		"Label"
+			"labelText"		"NEW"
+			style="CUINavButtonNew"
+		}
+		"URLBar"
+		{
+			"ControlName"		"TextEntry"
+			style="TextEntryURL"
+			group="url"
+		}
+		"URLAnchor"
+		{
+			"ControlName" "Label"
+			"labelText" ""
+			group="url"
+			zpos="-5"
+		}
+		"LibraryAnchor"
+		{
+			"ControlName" "Label"
+			"labelText" ""
+			group="library"
+			zpos="-5"
+		}		
+		"WebPanel"
+		{
+			style="WebPanelStyle"
+		}
+
+		library_filters	   { ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=0 group=library align=right }
+		
+		library_search	   { ControlName=TextEntry maxchars=12 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
+		
+		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=library zpos="4" }
+
+		label_library_zoom { ControlName=Label labelText="#steam_library_zoom"	style="NavLabelZoom" group=zoom  }
+		library_zoom	   { ControlName=Slider showbar="1" showticks="0" style=zoomslider group=zoom zpos="4" }
+		label_zoom_separator { ControlName=Label labelText="  |  " style="LibrarySeparator" group=zoom }
+		
+		label_library_show { ControlName=Label labelText="#steam_library_show" style="LibraryShow" group=filters }
+
+		
+		library_music_menu { ControlName=MenuButton labelText="#Music_Nav_Menu_Artists" style="NavLabel2" showDownArrow=0 align=left group=music }
+		library_music_add_button {	ControlName=Button labelText=""	tooltiptext="#Music_Playlist_Details_Menu_Add" style="MusicAddButton" group=music_add_button visible=false }
+		label_library_view { ControlName=Label labelText="#steam_library_views"	style="NavLabelView" group=views }
+		library_filters_list	   { ControlName=Label style="ViewListButton"	tooltiptext="#tooltip_view_list"	group=views }
+		library_filters_grid	   { ControlName=Label style="ViewGridButton" 	tooltiptext="#tooltip_view_grid"	group=views }
+		library_filters_details	   { ControlName=Label style="ViewDetailButton" tooltiptext="#tooltip_view_details"	group=views }
+		library_music_player_icon { ControlName=URLLabel style="MusicPlayerIcon" tooltiptext="#music_tooltip_view_player" URLtext="steam://open/musicplayer" align=right group=music }
+		
+		emailreminderbar { zpos=1 }
+
+		EVCert	{ controlname="Label" style="LabelEVCert" visible=false }		
+		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage" group="urlsec" }
+	}
+	
+	styles
+	{
+		FullscreenButton
+		{
+			image="Graphics/fullscreen_alt"
+			padding-left=0
+			padding-top=0
+			padding-right=0
+			padding-bottom=0
+		}
+		
+		
+		grouper
+		{
+			bgcolor=none
+			render_bg
+			{
+			}
+			
+		}
+		
+		headertextlarge
+		{
+			padding-left=10
+			padding-top=5
+			padding-right=10
+			padding-bottom=5
+			font-size=30
+			textcolor=Text
+			font-weight=400
+			bgcolor=DarkDialogBGTransparent
+			minimum-width=200
+		}
+		
+		zoomslider
+		{
+			inset="0 0 0 0"
+			textcolor=navlabel
+		}
+		
+		zoomslider:hover
+		{
+			inset="0 0 0 0"
+		}
+
+		LibrarySeparator
+		{
+			padding-left=0
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor=LabelDisabled
+			inset="0 -2 0 0"
+		}
+		
+		TextEntry
+		{
+			font-family=basefont
+			font-size=14
+			textcolor="Text"
+			font-weight=400
+			bgcolor="none"
+			selectedtextcolor="white"
+			selectedbgcolor="MaizeBG"
+			shadowtextcolor="Text"  // this is the cursor color
+	
+			inset-left=4
+			inset-top=0
+			render
+			{
+		        
+			}  
+	      }   
+	      
+	   	TextEntry:hover
+			{
+				textcolor="White"
+	    }   
+	      
+	     TextEntry:active
+			{
+				textcolor="White"
+	   	}   
+	      
+	      TextEntry:selected
+			{
+				textcolor="White"
+	    }   
+		
+		LibrarySearch
+		{
+			inset="0 0 0 0"
+			padding = "0 0 0 0"
+			bgcolor=DarkGreenBG
+			render {
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+
+		}
+		
+		LibrarySearch:empty
+		{
+			font-style=italic
+			textcolor="LabelDisabled"
+			inset="0 0 0 0"
+			padding = "0 0 0 0"
+			bgcolor=DarkGreenBG
+			render {
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+		
+		LibrarySearch:hover
+		{	
+			textcolor="texthover"	
+		}
+		
+		LibrarySearch:empty:hover
+		{
+			font-style=italic
+			textcolor="texthover"
+			
+		}
+			
+		LibrarySearch:disabled
+		{
+			font-style="strikeout"
+			bgcolor=DarkGreenBG
+			render {
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+			
+		LibrarySearchIcon
+		{
+			inset="20 0 -20 0"
+			render_bg={
+			}
+			image="graphics/icon_button_search"
+			padding-left=-17
+			padding-right=0
+		
+		}
+		
+		LibrarySearchIcon:disabled
+		{
+			bgcolor="none"
+			inset="4 0 -20 0"
+			render_bg={}
+			image="none"
+			padding-left=0
+			padding-right=-1
+		
+		}
+
+		MusicAddButton
+		{
+			font-size=14
+			font-size=13 [$OSX]
+			font-family=basefont
+			textcolor="labelfocus"
+			font-style=uppercase
+			render_bg
+			{
+				0="image( x0, y0 + 2, x1, y1, graphics/icon_expand )"
+			}
+		}
+		
+		MusicAddButton:hover
+		{
+			textcolor="white"
+			render_bg
+			{
+				0="image( x0, y0 + 2, x1, y1, graphics/icon_expand_over )"
+			}
+		}			
+		
+		MusicPlayerIcon
+		{
+			bgcolor="none"
+			inset="-1 0 0 0"
+			render_bg={}
+			image="graphics/icon_music_player"
+			padding-left=0
+			padding-right=-1
+			padding-top=-1
+		}
+		
+		MusicPlayerIcon:hover
+		{
+			bgcolor="none"
+			inset="-1 0 0 0"
+			render_bg={}
+			image="graphics/icon_music_player_hover"
+			padding-left=0
+			padding-right=-1
+			padding-top=-1
+		}
+		
+		MusicPlayerIcon:selected
+		{
+			bgcolor="none"
+			inset="-1 0 0 0"
+			render_bg={}
+			image="graphics/icon_music_player_selected"
+			padding-left=0
+			padding-right=-1
+			padding-top=-1
+		}
+		
+		LibraryShow
+		{
+			font-family=basefont
+			font-style=uppercase
+		}
+		
+		NavLabel
+		{
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			textcolor="Label"
+			font-style=uppercase
+		}	
+		
+		NavLabelView
+		{
+			font-family=basefont
+			font-style=uppercase
+			padding-left=18
+		}
+
+		NavLabelZoom
+		{
+			font-family=basefont
+			font-style=uppercase
+			padding-right=5
+		}
+	
+		NavLabel2 {
+
+		}	
+		
+		NavLabel2:hover
+		{
+			textcolor="White"
+
+		}	
+		
+		NavLabel2:selected
+		{
+			textcolor="Over"
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+		
+		Panel_transparent
+		{
+			bgcolor="none"
+		}
+		
+
+		ViewDetailButton
+		{
+			bgcolor="none"
+			inset="1 0 0 0"
+			render_bg={}
+			image="graphics/icon_button_detail"
+			padding-left=0
+			padding-right=0
+			minimum-width=0
+		}
+		
+		ViewDetailButton:hover
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_detail_over"
+		}
+
+		ViewDetailButton:active
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_detail_down"
+			
+		}
+		
+		ViewDetailButton:selected
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_detail_down"
+			render_bg {
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 1, ButtonBorder )"  // top
+				2="fill( x0 + 1, y1 - 1, x1 - 1, y1, ButtonBorder )"  // bottom
+				3="fill( x0, y0 + 1, x0 + 1, y1 - 1, ButtonBorder )"  // left
+				4="fill( x1 - 1, y0 + 1, x1, y1 - 1, ButtonBorder )"  // right
+
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, ClayEnabled )" // inside
+
+				6="fill( x0+1, y0+1, x0+2, y0+2, ButtonBorderCorner )"  // top-left
+				7="fill( x1-2, y0+1, x1-1, y0+2, ButtonBorderCorner )"  // top-right
+				8="fill( x0+1, y1-2, x0+2, y1-1, ButtonBorderCorner )"  // bottom-left
+				9="fill( x1-2, y1-2, x1-1, y1-1, ButtonBorderCorner )"  // bottom-right
+			}
+		}
+
+		ViewDetailButton:disabled
+		{
+			bgcolor="ButtonFace"
+			render_bg={}
+			image="graphics/icon_button_detail_disabled"
+		}
+		
+		ViewGridButton
+		{
+			bgcolor="none"
+			inset="1 0 0 0"
+			render_bg={}
+			image="graphics/icon_button_grid"
+			padding-left=0
+			padding-right=0
+		}
+		
+		ViewGridButton
+		{
+			bgcolor="none"
+			inset="1 0 0 0"
+			render_bg={}
+			image="graphics/icon_button_grid"
+			padding-left=0
+			padding-right=0
+			minimum-width=0
+		}
+		
+		ViewGridButton:hover
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_grid_over"
+		}
+
+		ViewGridButton:active
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_grid_down"
+		}
+		
+		ViewGridButton:selected
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_grid_down"
+			render_bg {
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 1, ButtonBorder )"  // top
+				2="fill( x0 + 1, y1 - 1, x1 - 1, y1, ButtonBorder )"  // bottom
+				3="fill( x0, y0 + 1, x0 + 1, y1 - 1, ButtonBorder )"  // left
+				4="fill( x1 - 1, y0 + 1, x1, y1 - 1, ButtonBorder )"  // right
+
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, ClayEnabled )" // inside
+
+				6="fill( x0+1, y0+1, x0+2, y0+2, ButtonBorderCorner )"  // top-left
+				7="fill( x1-2, y0+1, x1-1, y0+2, ButtonBorderCorner )"  // top-right
+				8="fill( x0+1, y1-2, x0+2, y1-1, ButtonBorderCorner )"  // bottom-left
+				9="fill( x1-2, y1-2, x1-1, y1-1, ButtonBorderCorner )"  // bottom-right
+			}
+		}
+		
+		ViewGridButton:disabled
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_grid_disabled"
+		}
+		
+		ViewListButton
+		{
+			bgcolor="none"
+			inset="1 0 0 0"
+			render_bg={}
+			image="graphics/icon_button_list"
+			padding-left=0
+			padding-right=0
+			minimum-width=0
+		}
+		
+		ViewListButton:hover
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_list_over"
+		}
+
+		ViewListButton:active
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_list_down"
+		}
+		
+		ViewListButton:selected
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_list_down"
+			render_bg {
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 1, ButtonBorder )"  // top
+				2="fill( x0 + 1, y1 - 1, x1 - 1, y1, ButtonBorder )"  // bottom
+				3="fill( x0, y0 + 1, x0 + 1, y1 - 1, ButtonBorder )"  // left
+				4="fill( x1 - 1, y0 + 1, x1, y1 - 1, ButtonBorder )"  // right
+
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, ClayEnabled )" // inside
+
+				6="fill( x0+1, y0+1, x0+2, y0+2, ButtonBorderCorner )"  // top-left
+				7="fill( x1-2, y0+1, x1-1, y0+2, ButtonBorderCorner )"  // top-right
+				8="fill( x0+1, y1-2, x0+2, y1-1, ButtonBorderCorner )"  // bottom-left
+				9="fill( x1-2, y1-2, x1-1, y1-1, ButtonBorderCorner )"  // bottom-right
+			}
+		}
+		
+		ViewListButton:disabled
+		{
+			bgcolor="none"
+			render_bg={}
+			image="graphics/icon_button_list_disabled"
+
+		}
+		
+		WebPanelStyle
+		{
+			bgcolor="none"
+			render_bg 
+			{
+			
+				// bg fill
+				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, almostBlack )"
+				// lines around
+//		1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+//		2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+//		3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+//		4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+
+				// single pixel fills in the corners
+//		5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+//		6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+//		7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+//		8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+			}
+		}
+		
+		TextEntryURL [!$OSX]
+		{
+			font-family=basefont
+			inset-top=1
+			inset-left=2
+			font-size=16
+			textcolor="label"
+			font-weight=400
+			bgcolor="none"
+			selectedtextcolor="White"
+			selectedbgcolor="MaizeBG"
+			shadowtextcolor="Text"	// this is the cursor color
+			render_bg
+			{
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 2, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1 - 1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
+			}
+		}
+		
+		"CSteamRootDialog TextEntryURL"
+		{
+			textcolor="text"		
+		}
+		
+		"CSteamRootDialog TextEntryURL:hover"
+		{
+			textcolor="texthover"
+		}
+		
+		CUINavButtonNew
+		{
+			textcolor="133 139 148 255"
+			font-weight=800
+		}
+		
+		CUINavButton {
+			font-family = basefont
+			font-size=16
+			inset = "9 0 9 0"
+			textcolor = White
+			minimum-width = 66
+			font-style=normal
+			render_bg {
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 2, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1 - 1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		CUINavButton:hover {
+			textcolor = White
+		}
+		
+		CUINavButton:selected {
+			textcolor = Over
+			render_bg {
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 2, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1 - 1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+
+		CUINavButton2 
+		{
+			textcolor="Labelfocus"
+			bgcolor="none"
+			font-family=basefont
+			font-size=16
+			font-weight=400 
+			font-style="uppercase"
+			padding-left=5
+			padding-right=5
+		}
+ 				
+		CUINavButton2:hover
+		{
+			textcolor="text"
+			font-style="uppercase,outerglow"
+			font-outerglow-color="TextGlowHoverSm"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+
+
+		}
+		
+		CUINavButton2:selected
+		{
+			textcolor="white"
+			bgcolor=none
+			font-style="uppercase,outerglow"
+			font-outerglow-color="TextGlowSelectedSm"
+			font-outerglow-offset=1
+			font-outerglow-filtersize=1
+		}				
+
+		CUINavButton3 {
+			font-size = 1
+			bgcolor = red
+			textcolor = none
+			inset = "-8 -8 -8 -8"
+			render_bg {}
+		}
+
+		CUINavigatorPanel
+		{			
+				bgcolor="none"
+				render_bg
+				{
+					1="fill( x0 + 1, y0, x1 - 1, y0 + 2, BorderBright )"  // top
+					2="fill( x0, y1 - 1, x1 - 1, y1, BorderDark )"  // bottom
+					3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+					4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+					5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+				}
+		}
+		
+		"CSteamRootDialog CGameFilterMenuButton" {
+			font-family = basefont
+			inset = "4 0 0 0"
+			textcolor = White
+			bgcolor = GreenBG
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			}
+		}
+				
+		"CGamesPage_Mini CGameFilterMenuButton"
+		{
+			inset="3 0 0 0"
+			padding-left="0"
+			
+		}	
+
+		LabelEVCert
+		{
+		font-family=basefont
+		font-size=16
+		textcolor="Black"
+		font-weight=400
+		bgcolor="html.secureurl"
+		inset-left=4
+		inset-right=4
+		inset-top=3
+		render=
+		{
+			1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+			2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+			3="fill( x0, y0, x0 + 1, y1, BorderDark )"  // left
+			4="fill( x1 - 1, y0, x1, y1, none )"  // right
+		}
+		}
+		
+		URLStatusImage
+		{
+		bgcolor=none
+		inset="-2 0 0 0"
+		render_bg={}
+		image="graphics/html_lock_disabled"
+		}
+
+		URLBarSecure
+		{
+		textcolor="html.secureurl"
+		}
+
+		URLBarBrokenSecure
+		{
+		textcolor="html.insecureurl"
+		}
+	}
+	
+	colors
+	{
+	    DialogBG="56 54 53 140"
+	    ClientBG="26 25 24 200"
+	}
+	
+	layout
+	{
+		place { control="label_store,label_library,label_community,label_me,label_news,label_console,label_oldlibrary" x=2 y=8 spacing=8 margin-top=2 margin-bottom=2 margin-left=8 margin-right=8 height=24 } 
+
+		place { control="label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" y="36" x="10" }
+
+		place { control="label_community_new" start="label_community" y="-40" x="15" width=0 height=0 }
+
+		place { control="back,forward,refresh,stop,home,URLStatusImage" x=10 y=36 height=30 width=30 spacing=8 margin-right=5 margin-top=7 }
+		
+		place { control="fullscreen" tooltiptext="#tooltip_view_list" align=right x=-33 y=-4 region="belowcontent"}
+	
+		place { control="PageLoadThrobber" align=right y=40 height=20 width=20  margin-right=10 margin-top=9 }
+
+		place { control="subnavgroup_library" align=top-center y=50 height=28 width=max margin-right=8 margin-left=84 }
+		
+		//place { control="refresh,stop,home,URLStatusImage" align=left x=70 y=44 height=30 width=30 spacing=0 margin-left=0 width=max }
+		
+		place { control="EVCert" align=left x=155 y=46 height=23 width=100 spacing=0 margin-left=0 }
+		
+		place { control="URLBar" x=255 y=46 height=23 width=max spacing=8 margin-right=100 }
+
+		place {control="label_search_icon,library_search" x=80 y=46 height=24 spacing=8}
+		
+		region { name="dropdown" width=250 x=82 y=46 height=24 }
+		
+		place { control="library_filters" align=right spacing=8 region="dropdown" }
+ 
+		place { control="library_zoom" width=82 height=20 }
+	     
+		place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator,label_library_view" align=right y=40 height=20 spacing=3 margin-right=90 }
+		place [!$OSX] { control="library_music_menu" align=left x=350 y=49 height=20 spacing=3 margin-right=180 }
+		place [!$OSX] { control="library_music_add_button" align=left x=408 y=52 height=20 spacing=3 margin-right=180 }
+		
+		place { control="library_filters_details,library_filters_list,library_filters_grid," align=right y=40 height=20 spacing=4 margin-right=9 width=20 }
+
+ 	  	place { control=emailreminderbar margin-top=81 margin-left=8 margin-right=8 width=max height=48 }
+
+		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
+		place { control=DownloadsPage 		width=max height=max margin-top=1 margin-left=1 margin-right=9 margin-bottom=65 start=emailreminderbar dir=down }
+		place { control=GamesPage_List 		width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=64 start=emailreminderbar dir=down }
+		place { control=GamesPage_Details 	width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=64 start=emailreminderbar dir=down }
+		place { control=GamesPage_Grid 		width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=64 start=emailreminderbar dir=down }
+		place { control=WebPanel 			width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=64 start=emailreminderbar dir=down }
+		place { control=BroadcastPage			width=max height=max margin-top=82 margin-left=9 margin-right=9 margin-bottom=65 start=phonereminderbar dir=down }
+		place { control=BroadcastPageMin		width=298 height=168 margin-top=0 margin-left=2 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
+		place { control=BroadcastPageMinHoriz	width=298 height=168 margin-top=0 margin-left=2 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
+		place { control=NewLibraryPage		width=max height=max margin-top=82 margin-left=9 margin-right=9 margin-bottom=65 start=phonereminderbar dir=down }
+		place { control=ConsolePage 		width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=64 start=emailreminderbar dir=down }
+
+		place { control=MediaPage 		width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=64 start=emailreminderbar dir=down }
+		place { control=ToolsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=64 start=emailreminderbar dir=down }
+		place { control=MusicPage_Details width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=64 start=emailreminderbar dir=down }
+		place { control="library_music_player_icon" align=right y=57 height=16 width=16 margin-right=10 }
+
+	}
+
+}
+

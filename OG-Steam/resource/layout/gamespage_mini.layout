@@ -1,0 +1,120 @@
+"resource/layout/gamespage_mini.layout"
+{
+	controls
+	{
+		GamesList { controlname=Panel style="DetailsBorderPanel" }
+		CGamesPage_Mini	{ title="#Steam_Root_Title" }
+		library_filters	   { ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=1 group=filters }
+		label_library_show { ControlName=Label labelText="#steam_library_show" style="LibraryShow" group=filters }
+		library_search	   { ControlName=TextEntry maxchars=12 hintText="#steam_library_search" style="LibrarySearch" group=library }
+		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=filters }
+		
+		frame_title
+		{
+			ControlName=Label
+	
+			style="ClientTitle"
+			"textAlignment"   "center"
+			"textAlignment"   "west" //[$WIN32]
+			labelText="#Steam_Root_Title"
+		}
+	}
+
+	styles
+	{
+
+
+		CGamesPage_Mini  {
+
+		}
+
+
+		"CGamesPage_Mini ListPanel" {
+			render_bg
+			{
+			}
+		}
+
+		LibraryShow
+		{
+			font-family=basefont
+			font-style=uppercase
+		}
+		
+		ListPanelColumnheader
+		{
+			//render {}
+			//bgcolor=none
+			//render_bg {}	
+		}
+		
+		LibrarySearchIcon
+		{
+			bgcolor="none"
+			inset="-2 0 0 0"
+			render_bg={}
+			image="graphics/icon_button_search"
+			padding-left=0
+			padding-right=-1
+		}
+		
+		NavLabel2 {
+			font-family = basefont
+			inset = "4 0 2 0"
+			padding-right=4
+			textcolor = White
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+			
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
+			}
+		}
+		
+		DetailsBorderPanel
+		{
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+		
+		LibrarySearch
+		{
+			padding-left=0
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="White"
+			bgcolor=DarkGreenBG
+			render
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+	}
+
+ 	layout
+ 	{
+		place { control="frame_captiongrip" margin=2 width=max height=38 }
+		place { control="MenuBar" margin-left=9 height=24 margin-top=27 margin-right=44 }
+		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=8 spacing=2 }
+
+		place { control="library_search" }
+		place [!$OSX] { control="label_search_icon" align=left y=55 height=22 spacing=1 x=10 }
+		place [!$OSX] { control="library_search" align=left y=55 height=22 width=100 spacing=1 x=30 }
+
+		place { control="gameslist" align=left margin-left=8 margin-right=8 margin-top=85 margin-bottom=25 width=max height=max }
+		place { control="library_filters" align=right margin-left=10 margin-right=8 margin-top=55 height=22 spacing=1 }
+
+ 	}
+}

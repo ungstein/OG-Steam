@@ -1,0 +1,181 @@
+"resource/layout/accountbutton.layout"
+{
+	controls
+	{
+		account_avatar
+		{
+			"ControlName"	"Image"
+			"fieldName"		"account_avatar"
+			"zpos" 			"-2" // behind dropdown button
+		}
+
+		account_drop_down
+		{
+			"ControlName"	"Label"
+			"fieldName"		"account_drop_down"
+			"zpos" 			"-2" // behind dropdown button
+			"style"			"AccountDropDownStyleOffline"
+		}
+
+
+		account_balance
+		{
+			"ControlName"	"Label"
+			"fieldName"		"account_balance"
+			"style"			"AccountBalanceStyle"
+			
+			"zpos" 			"-2" // behind dropdown button
+		}
+
+		account_persona
+		{
+			"ControlName"	"Label"
+			"fieldName"		"account_persona"
+			"style" 		"AccountPersonaStyleOffline"
+			"labelText"		"%persona%"
+			"zpos" 			"-2" // behind dropdown button
+		}
+
+		account_menu_button
+		{
+			"ControlName"	"Button"
+			"fieldName"		"account_menu_button"
+			"labelText"		""
+			"style" 		"AccountMenuButtonStyle"
+		}
+	}
+
+	styles
+	{
+		AccountPersonaStyleOffline
+		{
+			padding-right=6
+			padding-left=12
+			textcolor=Friends.OfflineColor
+		}
+
+		AccountPersonaStyleOnline
+		{
+			padding-right=6
+			padding-left=12
+			textcolor=Friends.OnlineColor
+			render_bg
+		  	{
+				0="gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Friends.OnlineColor, DialogBG )"
+			}
+		}
+
+		AccountPersonaStyleInGame
+		{
+			padding-right=6
+			padding-left=12
+			textcolor=Friends.InGameColor
+			render_bg
+		  	{
+				0="gradient_horizontal( x0, y0 - 1, x0 + 2, y1 + 1, Friends.InGameColor, DialogBG )"
+			}
+		}
+		
+		AccountDropDownStyleOffline
+		{
+			render_bg
+		  	{
+				1="image( x0, y0+10, x1, y1, graphics/dropdown_offline )"
+			}
+			
+		}
+		
+		AccountDropDownStyleOnline
+		{
+			render_bg
+		  	{
+				1="image( x0, y0 + 10, x1, y1, graphics/dropdown_online )"
+			}
+		}
+		
+		AccountDropDownStyleInGame
+		{
+			render_bg
+		  	{
+				1="image( x0, y0+10, x1, y1, graphics/dropdown_ingame )"
+			}
+		}
+
+		AccountButtonStyle
+		{
+			render_bg
+		  	{
+				// background fill
+				0="fill( x0, y0, x1, y1, GreenBG )"
+			}
+		}
+
+		AccountButtonStyle:hover
+		{
+			render_bg
+		  	{
+				// background fill
+				0="fill( x0, y0, x1, y1, GreenBG )"
+			}
+		}
+
+		AccountBalanceStyle
+		{
+			textcolor="Friends.OnlineColor"
+			bgcolor="none"
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=regular
+			padding-top=1
+			padding-right=8
+			padding-left=2
+		}
+
+		AccountBalanceStyle [$OSX]
+		{
+		      textcolor="labeldisabled"
+		      bgcolor="none"
+		      font-family=basefont
+		      font-size=13
+		      font-weight=400
+		      font-style=regular
+		      inset="0 1 0 0"
+		}
+		
+		AccountMenuButtonStyle
+		{
+			render_bg
+		  	{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				
+				// 5="fill( x0, y0, x1, y1, GreenBG )"
+			}
+		}
+		
+		AccountMenuButtonStyle:active
+		{
+			render_bg
+		  	{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				// 5="fill( x0, y0, x1, y1, GreenBG )"
+			}
+		}
+	}
+
+	layout
+	{
+		place { control="account_menu_button" align=left height=24 width=max } // span over everything
+		place { control="account_balance" align=right height=24 }
+		place { control="account_drop_down" align=right end-right="account_balance" margin-top=1  height=24 width=8 }
+		place { control="account_persona" align=right end-right="account_drop_down" margin-top=1  height=24 }
+		place { control="account_avatar" align=right end-right="account_persona" height=24 width=24 }
+	}
+}
