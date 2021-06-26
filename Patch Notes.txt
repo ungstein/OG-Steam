@@ -4,6 +4,14 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.8a
+
+Small bug fix
+- Revealed nav buttons on Downloads page
+- Adjusted left margin on Downloads page
+
+------------------------------------------------------------
+
 v1.0.8
 
 Minor tweaks
