@@ -1097,8 +1097,9 @@ steam.styles
 			}
 		}
 
-		FrameTitle:FrameFocus {
-			font-family = basefont
+		FrameTitle:FrameFocus
+		{
+			font-family=basefont
 			font-size=16
 			padding-left="0"
 			padding-right="64"
@@ -1112,7 +1113,7 @@ steam.styles
 
 		"CFriendsDialog SectionedListPanelInterior"
 		{
-			bgcolor=none
+			bgcolor="none"
 			font-family=basefont
 			font-size=16
 			font-weight=400
@@ -1122,13 +1123,9 @@ steam.styles
 			shadowtextcolor="TextDisabled"	// the color of disabled line items		
 			render
 			{
-				//gradient to obscure content at top of scrolling region 
-
 			}
 			render_bg 
 			{	
-				// background gradient
-
 			}
 		}
 
@@ -1653,7 +1650,7 @@ steam.styles
 
 		"Csteamrootdialog ListPanelInterior:scrollbar"
 		{
-			inset="3 0 -1 0"
+			inset="0 0 0 0"
 			bgcolor=none
 			render
 			{
@@ -1680,7 +1677,7 @@ steam.styles
 
 		"Page ListPanelInterior:scrollbar"
 		{
-			inset="3 1 -1 0"
+			inset="0 0 0 0"
 			font-size=16
 			bgcolor=none
 			render
@@ -1991,6 +1988,9 @@ steam.styles
 			font-weight=400
 			textcolor="Text"
 			bgcolor="none"
+			render_bg
+			{
+			}
 		}
 
 		ProgressBar
@@ -2025,7 +2025,7 @@ steam.styles
 
 		"CFriendsDialog PropertySheet"
 		{
-			bgcolor="none"
+			bgcolor="DarkGreenBG"
 		}
 
 		RadioButton
@@ -2143,7 +2143,7 @@ steam.styles
 		Scrollbar
 		{
 			bgcolor=none
-			inset = "0 1 4 3"
+			inset = "0 0 3 1"
 		}
 		
 		Scrollbar.Horizontal
@@ -2152,8 +2152,9 @@ steam.styles
 			inset = "0 1 1 3"
 		}
 
-		Scrollbarbutton
+		ScrollBarButton.up
 		{
+			inset="-1 2 0 0"
 			bgcolor=GreenBG
 			render_bg
 			{
@@ -2170,8 +2171,47 @@ steam.styles
 			}
 		}
 
+		ScrollBarButton.up:hover
+		{
+			inset="-1 2 0 0"
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				//Up Arrow
+				10="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 7, White )"
+				11="fill( x0 + 7, y0 + 7, x0 + 10, y0 + 8, White )"
+				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, White )"
+				13="fill( x0 + 5, y0 + 9, x0 + 12, y0 + 10, White )"
+			}
+		}
+
+		Scrollbarbutton.up:active
+		{
+			inset="-1 2 0 0"
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+				//Up Arrow
+				10="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 7, White )"
+				11="fill( x0 + 7, y0 + 7, x0 + 10, y0 + 8, White )"
+				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, White )"
+				13="fill( x0 + 5, y0 + 9, x0 + 12, y0 + 10, White )"
+			}
+		}
+
 		Scrollbarbutton.down
 		{
+			inset="-2 0 0 0"
 			bgcolor=GreenBG
 			render_bg
 			{
@@ -2185,6 +2225,45 @@ steam.styles
 				11="fill( x0 + 7, y0 + 9, x0 + 10, y0 + 10, BorderBright )"
 				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, BorderBright )"
 				13="fill( x0 + 5, y0 + 7, x0 + 12, y0 + 8, BorderBright )"
+			}
+		}
+
+		Scrollbarbutton.down:hover
+		{
+			
+			inset="-2 0 0 0"
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				//Down Arrow
+				10="fill( x0 + 8, y0 + 10, x0 + 9, y0 + 11, White )"
+				11="fill( x0 + 7, y0 + 9, x0 + 10, y0 + 10, White )"
+				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, White )"
+				13="fill( x0 + 5, y0 + 7, x0 + 12, y0 + 8, White )"
+			}
+		}
+
+		Scrollbarbutton.down:active
+		{
+			inset="-2 0 0 0"
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+				//Down Arrow
+				10="fill( x0 + 8, y0 + 10, x0 + 9, y0 + 11, White )"
+				11="fill( x0 + 7, y0 + 9, x0 + 10, y0 + 10, White )"
+				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, White )"
+				13="fill( x0 + 5, y0 + 7, x0 + 12, y0 + 8, White )"
 			}
 		}
 		
@@ -2205,6 +2284,42 @@ steam.styles
 				13="fill( x0 + 6, y0 + 7, x0 + 7, y0 + 8, BorderBright )"
 			}
 		}
+
+		Scrollbarbutton.left:hover
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				//Left Arrow
+				10="fill( x0 + 9, y0 + 4, x0 + 10, y0 + 11, White )"
+				11="fill( x0 + 8, y0 + 5, x0 + 9, y0 + 10, White )"
+				12="fill( x0 + 7, y0 + 6, x0 + 8, y0 + 9, White )"
+				13="fill( x0 + 6, y0 + 7, x0 + 7, y0 + 8, White )"
+			}
+		}
+
+		Scrollbarbutton.left:active
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+				//Left Arrow
+				10="fill( x0 + 9, y0 + 4, x0 + 10, y0 + 11, White )"
+				11="fill( x0 + 8, y0 + 5, x0 + 9, y0 + 10, White )"
+				12="fill( x0 + 7, y0 + 6, x0 + 8, y0 + 9, White )"
+				13="fill( x0 + 6, y0 + 7, x0 + 7, y0 + 8, White )"
+			}
+		}
 		
 		Scrollbarbutton.right
 		{
@@ -2221,6 +2336,42 @@ steam.styles
 				11="fill( x0 + 7, y0 + 5, x0 + 8, y0 + 10, BorderBright )"
 				12="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 9, BorderBright )"
 				13="fill( x0 + 9, y0 + 7, x0 + 10, y0 + 8, BorderBright )"
+			}
+		}
+
+		Scrollbarbutton.right:hover
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+
+				//Right Arrow
+				10="fill( x0 + 6, y0 + 4, x0 + 7, y0 + 11, White )"
+				11="fill( x0 + 7, y0 + 5, x0 + 8, y0 + 10, White )"
+				12="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 9, White )"
+				13="fill( x0 + 9, y0 + 7, x0 + 10, y0 + 8, White )"
+			}
+		}
+
+		Scrollbarbutton.right:active
+		{
+			bgcolor=GreenBG
+			render_bg
+			{
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+
+				//Right Arrow
+				10="fill( x0 + 6, y0 + 4, x0 + 7, y0 + 11, White )"
+				11="fill( x0 + 7, y0 + 5, x0 + 8, y0 + 10, White )"
+				12="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 9, White )"
+				13="fill( x0 + 9, y0 + 7, x0 + 10, y0 + 8, White )"
 			}
 		}
 
@@ -2277,7 +2428,6 @@ steam.styles
 		ScrollBarSlider // gutter
 		{
 			bgcolor="LightGreenBG"
-			inset="0 0 0 0"
 			render_bg
 			{
 				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, LightGreenBG )" // inside
@@ -2350,7 +2500,7 @@ steam.styles
 
 		SectionedListPanel
 		{
-			bgcolor="propertysheetbg"
+			bgcolor="none"
 			inset="0 0 0 0"  
 			font-family=basefont
 			font-size=16
@@ -2361,28 +2511,6 @@ steam.styles
 			bgcolor="none"
 			render_bg 
 			{
-				// lines around
-				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-
-				// single pixel fills in the corners
-				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
-				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
-				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
-				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
-					11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
-					12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
-					13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
-					14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
-					15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
-					16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
-					17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
-					18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-
-				// background gradient
-				0="gradient( x0 + 1, y0 + 1, x1, y0 + 1, Propertysheetbg, BackgroundStartOpaque)"
 			}
 		}
 
@@ -2397,17 +2525,6 @@ steam.styles
 			selectedbgcolor="MaizeBG"
 			render_bg 
 			{
-				// background fill
-				0="gradient( x0 + 1, y0, x1 - 1, y0 + 140, dialogbg, almostblack )"
-				1="fill( x0 + 1, y0 + 140, x1 - 1, y1-1, almostblack )"
-
-				//lines around, special due to tabs at top
-				2="gradient( x1 - 1, y0 -1, x1, y1 -1, dialogbg, ButtonBorderDisabled )"  // right
-				3="gradient( x0, y0, x0 + 1, y1 - 2, dialogbg, ButtonBorderDisabled )"  // left
-
-				//single pixel fills
-				4="fill( x0, y1-1, x0 + 1, y1, dialogbg )"
-				5="fill( x1-1, y1-1, x1, y1, dialogbg )"
 			}
 		}
 

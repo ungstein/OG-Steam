@@ -4,6 +4,14 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.7
+
+Minor tweaks
+- Fixed Friend Game Invite Dialog
+- Fixed scrollbar once and for all
+
+------------------------------------------------------------
+
 v1.0.6
 
 Minor tweaks

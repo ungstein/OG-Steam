@@ -37,7 +37,7 @@
 	layout
 	{
 		// place { control="panel_list" width=max height=max margin=1 }
-		region { name=main x=0 y=0 margin=5 }
-		place { control="downloadsummarypanel,panel_list" dir=down region=main width=max height=max spacing=0 margin=-5}
+		region { name=main x=0 y=0 margin-right=-2 }
+		place { control="downloadsummarypanel,panel_list" dir=down region=main width=max height=max spacing=0 margin=0}
 	}
 }

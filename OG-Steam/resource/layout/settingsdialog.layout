@@ -14,6 +14,7 @@
 	{
 		CDialogSettings
 		{
+			font-family=basefont
 			font-size=16
 			minimum-width="800"
 			minimum-height="620"
@@ -26,6 +27,7 @@
 		
 		PropertySheet
 		{
+			font-family=basefont
 			font-size=16
 			minimum-width="535"
 			minimum-height="505"
@@ -45,6 +47,7 @@
 			inset="-2 0 0 0"
 			minimum-width="190"
 			minimum-height="525"
+			font-family=basefont
 			font-size=18
 			padding=6
 			render
@@ -55,6 +58,7 @@
 		ListPanelInterior
     {     
 		inset="3 0 0 0"
+		font-family=basefont
 		font-size=16
 		textcolor="White"
 		bgcolor="none" 

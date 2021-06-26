@@ -131,7 +131,7 @@
 		CDownloadSummaryPanel
 		{
 			bgcolor=panelBackground
-			inset="0	0 0 0"
+			inset="0 0 0 0"
 	  	}
 	   
 		throttleLabel
