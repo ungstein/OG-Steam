@@ -4,6 +4,15 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.9
+
+Minor tweaks
+- Overhauled text colours
+- Fixed active focused buttons
+- Cleaned up steam.styles
+
+------------------------------------------------------------
+
 v1.0.8a
 
 Small bug fix
