@@ -188,7 +188,7 @@ steam.styles
 		"LightGrayBG"			"121 126 121 255"
 		"GrayBG"				"73 78 73 255"
 		"GrayBG2"				"82 89 78 255"
-		"SecBG"					"GrayBG2"
+		"SecBG"					"GreenBG"
 		"TempGradientTop"		"53 52 51 255"
 
 		// scheme-specific colors
