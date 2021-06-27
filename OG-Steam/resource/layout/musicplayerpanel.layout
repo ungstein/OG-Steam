@@ -134,7 +134,7 @@
 		
 		place {	control="CurrentAlbumImage"	region=currenttrack x=0 y=10 width=56 height=56	}
 		place { control="CurrentStatusLabel" region=currenttrack x=64 y=10 width=max }
-		place { control="CurrentTrackLabel" region=currenttrack x=64 y=20 width=max}
+		place { control="CurrentTrackLabel" region=currenttrack x=64 y=24 width=max}
 		place { control="CurrentArtistLabel" region=currenttrack x=64 y=36 width=max }
 		
 		place { control="RepeatButton,ShuffleButton,PreviousButton" region=transport x=0 y=20 spacing=8 margin=0 height=18 }
