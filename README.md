@@ -23,6 +23,7 @@ Preview
 
 ![Login](https://i.imgur.com/FdG0g2M.png)
 ![About Steam](https://i.imgur.com/GMRbUbi.png)
+![VGUI Zoo](https://i.imgur.com/MB1CGjJ.png)
 ![Store](https://i.imgur.com/O5BduOB.png)
 ![Library](https://i.imgur.com/KF2y1Gv.png)
 ![Downloads](https://i.imgur.com/O14QhuD.png)
