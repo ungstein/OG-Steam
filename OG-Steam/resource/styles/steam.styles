@@ -417,8 +417,6 @@ steam.styles
 				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
 				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
-			
-				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
 			}
 		}
 
@@ -435,8 +433,6 @@ steam.styles
 				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
 				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
 				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
-			
-				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
 			}
 		}
 		
@@ -446,15 +442,24 @@ steam.styles
 			bgcolor=none
 			render_bg {
 				1="fill( x0, y0, x1, y0 + 2, BorderBright )"  // top
-				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
-				3="fill( x0, y0, x0 + 2, y1 - 1, BorderBright )"  // left
-				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				2="fill( x0, y1 - 2, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 2, y1, BorderBright )"  // left
+				4"fill( x1 - 2, y0, x1, y1, BorderDark )"  // right
 				5="fill( x0, y0, x1, y0 + 1, Black )"  // top
-				6="fill( x0, y1, x1 + 1, y1 + 1, Black )"  // bottom
-				7="fill( x0, y0, x0 + 1, y1, Black )"  // left
-				8"fill( x1, y0, x1 + 1, y1, Black )"  // right
-				
-				9="fill( x0 + 2, y0 + 2, x1 - 1, y1 - 1, GreenBG )" // inside
+				6="fill( x0, y1 - 1, x1, y1, Black )"  // bottom
+				7="fill( x0, y0, x0 + 1, y1 - 1, Black )"  // left
+				8="fill( x1 - 1, y0, x1, y1, Black )"  // right
+			}
+		}
+
+		Button:focus:active
+		{
+			textcolor=White
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
 			}
 		}
 
@@ -467,8 +472,6 @@ steam.styles
 				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
 				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
-			
-				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
 			}
 		}
 
@@ -483,9 +486,12 @@ steam.styles
 				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
 				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
-			
-				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
 			}
+		}
+
+		"Page Button:hover"
+		{
+			textcolor=White
 		}
 
 		"Page Button:active"
@@ -497,8 +503,6 @@ steam.styles
 				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
 				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
 				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
-			
-				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
 			}
 		}
 
@@ -508,17 +512,27 @@ steam.styles
 			bgcolor=none
 			render_bg {
 				1="fill( x0, y0, x1, y0 + 2, BorderBright )"  // top
-				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
-				3="fill( x0, y0, x0 + 2, y1 - 1, BorderBright )"  // left
-				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
+				2="fill( x0, y1 - 2, x1, y1, BorderDark )"  // bottom
+				3="fill( x0, y0, x0 + 2, y1, BorderBright )"  // left
+				4"fill( x1 - 2, y0, x1, y1, BorderDark )"  // right
 				5="fill( x0, y0, x1, y0 + 1, Black )"  // top
-				6="fill( x0, y1, x1 + 1, y1 + 1, Black )"  // bottom
-				7="fill( x0, y0, x0 + 1, y1, Black )"  // left
-				8"fill( x1, y0, x1 + 1, y1, Black )"  // right
-				
-				9="fill( x0 + 2, y0 + 2, x1 - 1, y1 - 1, GreenBG )" // inside
+				6="fill( x0, y1 - 1, x1, y1, Black )"  // bottom
+				7="fill( x0, y0, x0 + 1, y1 - 1, Black )"  // left
+				8="fill( x1 - 1, y0, x1, y1, Black )"  // right
 			}
 		}
+
+		"Page Button:focus:active"
+		{
+			textcolor=White
+			render_bg {
+				1="fill( x0, y0, x1, y0 + 1, BorderDark )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderDark )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+			}
+		}
+
 
 		"Page Button:disabled"
 		{
@@ -529,8 +543,6 @@ steam.styles
 				2="fill( x0, y1 - 1, x1, y1, BorderDark )"  // bottom
 				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
-			
-				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, GreenBG )" // inside
 			}
 		}
 		
