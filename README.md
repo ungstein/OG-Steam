@@ -26,7 +26,7 @@ Preview
 ![VGUI Zoo](https://i.imgur.com/deMlNiK.png)
 ![Store](https://i.imgur.com/O5BduOB.png)
 ![Library](https://i.imgur.com/KF2y1Gv.png)
-![Downloads](https://i.imgur.com/O14QhuD.png)
+![Downloads](https://i.imgur.com/8YrQZhj.png)
 ![Small Mode](https://i.imgur.com/HSO8YJb.png)
 ![Overlay](https://i.imgur.com/FxAv87f.png)
 ![Servers](https://i.imgur.com/CFMBKd7.png)
