@@ -53,7 +53,7 @@ steam.styles
 		ButtonBorderActive="140 135 129 255"
 		ButtonBorderFocus="153 147 141 255"
 
-		Text="White"
+		Text="160 170 149 255"
 //		Text="209 207 205 255"
 		Text2="184 180 176 255"
 		TextDisabled="117 128 111 255"
