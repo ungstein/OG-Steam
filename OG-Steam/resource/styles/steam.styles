@@ -1396,8 +1396,8 @@ steam.styles
 		"ListPanelColumnheader ListPanelCheckBox"
 		{
 			font-family=basefont
-			font-size=16
-			font-weight=400
+			font-size=15
+			font-weight=100
 			textcolor="White"
 			image="graphics/chkUnSelFocus_Sm"
 			inset="4 0 0 8"  
@@ -1412,8 +1412,8 @@ steam.styles
 		"ListPanelColumnheader ListPanelCheckBox:focus"
 		{
 			font-family=basefont
-			font-size=16
-			font-weight=400
+			font-size=15
+			font-weight=100
 			textcolor="White"
 			image="graphics/chkUnSelFocus_Sm"
 			inset="4 0 0 0"  
@@ -1431,12 +1431,12 @@ steam.styles
 		ListPanelColumnheader
 		{
 			font-family=basefont
-			font-size=13
-			font-size=13 [$OSX]
-			font-weight=800
+			font-size=15
+			font-size=15 [$OSX]
+			font-weight=100
 			textcolor="White"
 			bgcolor="none"
-			inset="0 3 0 0"
+			inset="0 0 2 0"
 
 			render_bg
 			{
@@ -1457,9 +1457,9 @@ steam.styles
 		"Csteamrootdialog ListPanelColumnheader"
 		{
 			font-family=basefont
-			font-size=13
-			font-size=13 [$OSX]
-			font-weight=400
+			font-size=15
+			font-size=15 [$OSX]
+			font-weight=100
 			textcolor="White"
 			font-style="uppercase"
 			bgcolor="none"
