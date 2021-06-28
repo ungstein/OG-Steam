@@ -4,7 +4,7 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
-v1.0.10a
+v1.0.9a
 
 Minor tweaks
 - Changed ListPanelColumnheader font size and weight
