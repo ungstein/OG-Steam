@@ -1400,7 +1400,7 @@ steam.styles
 			font-weight=100
 			textcolor="White"
 			image="graphics/chkUnSelFocus_Sm"
-			inset="4 0 0 8"  
+			inset="4 0 0 0"  
 		}
 
 		"ListPanelColumnHeader ListPanelCheckBox:selected"
