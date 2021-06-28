@@ -23,11 +23,11 @@ Preview
 
 ![Login](https://i.imgur.com/FdG0g2M.png)
 ![About Steam](https://i.imgur.com/GMRbUbi.png)
-![VGUI Zoo](https://i.imgur.com/MB1CGjJ.png)
+![VGUI Zoo](https://i.imgur.com/deMlNiK.png)
 ![Store](https://i.imgur.com/O5BduOB.png)
 ![Library](https://i.imgur.com/KF2y1Gv.png)
 ![Downloads](https://i.imgur.com/O14QhuD.png)
 ![Small Mode](https://i.imgur.com/HSO8YJb.png)
 ![Overlay](https://i.imgur.com/FxAv87f.png)
-![Servers](https://i.imgur.com/T50RE0C.png)
+![Servers](https://i.imgur.com/CFMBKd7.png)
 ![Music Player](https://i.imgur.com/nBrVwqL.png)
