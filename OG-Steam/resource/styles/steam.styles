@@ -1132,7 +1132,7 @@ steam.styles
 			font-family=basefont
 			font-size=16
 			font-weight=400
-			textcolor="Text"
+			textcolor="White"
 			selectedtextcolor="White"
 			selectedbgcolor="BorderDark"
 			shadowtextcolor="TextDisabled"	// the color of disabled line items
@@ -1188,7 +1188,7 @@ steam.styles
 			font-family = basefont
 			textcolor=White
 			bgcolor=none
-			selectedtextcolor = White
+			selectedtextcolor=White
 			selectedbgcolor = BorderDark
 			inset="0 0 0 0"
 			render_bg
@@ -1223,7 +1223,7 @@ steam.styles
 			bgcolor="DarkGreenBG"
 			font-size=16
 			font-weight=400
-			textcolor="Text"
+			textcolor="White"
 			selectedtextcolor="White"
 			selectedbgcolor="BorderDark"
 			inset="0 0 0 0"
@@ -1250,7 +1250,7 @@ steam.styles
 
 		"GameItem_Installed"
 		{
-			textcolor="text"
+			textcolor="White"
 			selectedtextcolor="White"
 		}
 
@@ -2001,7 +2001,7 @@ steam.styles
 			font-family=basefont
 			font-size=16
 			font-weight=400
-			textcolor="Text"
+			textcolor="White"
 			bgcolor="none"
 			render_bg
 			{
