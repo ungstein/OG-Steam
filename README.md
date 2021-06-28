@@ -28,6 +28,6 @@ Preview
 ![Library](https://i.imgur.com/aV7H2TF.png)
 ![Downloads](https://i.imgur.com/8YrQZhj.png)
 ![Small Mode](https://i.imgur.com/HSO8YJb.png)
-![Overlay](https://i.imgur.com/FxAv87f.png)
+![Overlay](https://i.imgur.com/zbE6VYw.png)
 ![Servers](https://i.imgur.com/CFMBKd7.png)
 ![Music Player](https://i.imgur.com/nBrVwqL.png)
