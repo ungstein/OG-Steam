@@ -2546,7 +2546,7 @@ steam.styles
 		SectionedlistpanelCollapser
 		{
 			bgcolor=none
-			inset="2 1 0 0"
+			inset="0 0 0 0"
 			image="graphics/icon_expand"
 			render_bg
 			{
@@ -2587,7 +2587,7 @@ steam.styles
 			font-family=basefont
 			font-size=16
 			font-weight=400
-			textcolor="labelfocus"
+			textcolor="Label"
 			font-style=uppercase
 		}
 
@@ -3019,7 +3019,7 @@ steam.styles
 
 		URLLabel
 		{
-			textcolor="White"
+			textcolor="Label"
 			bgcolor="none"
 			font-family=basefont
 			font-size=16
