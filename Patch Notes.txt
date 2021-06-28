@@ -4,6 +4,15 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.10
+
+Minor tweaks
+- Changed ListPanelColumnheader font size and weight
+- Fixed position of ListPanelColumnheader ListPanelCheckBox
+- Changed various font colours
+
+------------------------------------------------------------
+
 v1.0.9
 
 Minor tweaks
