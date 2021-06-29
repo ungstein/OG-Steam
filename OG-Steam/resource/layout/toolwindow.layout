@@ -132,7 +132,7 @@
 
 	layout
 	{
-		place [!$OSX] { control="ToolWindowSheet" x=10 y=24 height=max width=max margin-right=10 margin-bottom=-10 }
-		place [$OSX] { control="ToolWindowSheet" x=10 y=24 height=max width=max margin-right=10 margin-bottom=-10 }
+		place [!$OSX] { control="ToolWindowSheet" x=10 y=24 height=max width=max margin-right=10 margin-bottom=2 }
+		place [$OSX] { control="ToolWindowSheet" x=10 y=24 height=max width=max margin-right=10 margin-bottom=2 }
 	}
 }
