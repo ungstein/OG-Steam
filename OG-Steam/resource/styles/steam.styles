@@ -1110,7 +1110,7 @@ steam.styles
 			padding-left="0"
 			padding-right="72"
 			textcolor = DisabledText1
-			inset = "22 6 0 4"
+			inset = "22 8 0 4"
 			render_bg
 			{
 				1="image( x0 + 7, y0 + 8, x1, y1, resource/icon_steam_disabled )" // inside
@@ -1124,7 +1124,7 @@ steam.styles
 			padding-left="0"
 			padding-right="64"
 			textcolor = White
-			inset = "22 6 0 4"
+			inset = "22 8 0 4"
 			render_bg
 			{
 				1="image( x0 + 7, y0 + 8, x1, y1, resource/icon_steam )" // inside
