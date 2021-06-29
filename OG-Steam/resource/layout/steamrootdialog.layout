@@ -651,7 +651,7 @@
 			
 		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=8 spacing=2 }
 
-		place [!$OSX] { control="fullscreen" align=right y=7 height=24 spacing=0 margin-right=24 margin-top=61 }
+		place [!$OSX] { control="fullscreen" align=right y=7 height=24 spacing=0 margin-right=21 margin-top=61 }
 
 		place { control="startvr, exitvr" align=right end-right="fullscreen" height=24 margin-right=8 margin-top=68 }
 
