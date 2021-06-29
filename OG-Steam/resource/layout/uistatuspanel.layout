@@ -27,8 +27,8 @@
 	  region { name="statusRegion" y=0 width=max height=28 align=bottom margin=-10 } 
 	  region { name="ProgressRegion" y=32 width=max height=20 align=top margin=0 }
 	 	
-	  place { control="StatusDownloading" region="TitleRegion" align="top-center" margin-top=7 }
+	  place { control="StatusDownloading" region="TitleRegion" align="top-center" margin-top=11 }
 	  place { control="StatusPaused, StatusComplete" region="StatusRegion"  align="top-center" margin-top=0 }
-	  place { control="StatusProgressbar" region="ProgressRegion" width=300 height=3 margin-top=0 align="top-center" }
+	  place { control="StatusProgressbar" region="ProgressRegion" width=300 height=3 margin-top=1 align="top-center" }
 	}
 }
