@@ -593,6 +593,12 @@ steam.styles
 			image = "Graphics/chkUnselStd"
 			textcolor=White
 		}
+		
+		CheckButton:hover
+		{
+			textcolor = Over
+			image = "Graphics/chkUnselStd"
+		}
 
 		CheckButton:selected
 		{
@@ -1108,7 +1114,7 @@ steam.styles
 			inset = "22 6 0 4"
 			render_bg
 			{
-				1="image( x0 + 7, y0 + 6, x1, y1, resource/icon_steam_disabled )" // inside
+				1="image( x0 + 7, y0 + 8, x1, y1, resource/icon_steam_disabled )" // inside
 			}
 		}
 
@@ -1122,7 +1128,7 @@ steam.styles
 			inset = "22 6 0 4"
 			render_bg
 			{
-				1="image( x0 + 7, y0 + 6, x1, y1, resource/icon_steam )" // inside
+				1="image( x0 + 7, y0 + 8, x1, y1, resource/icon_steam )" // inside
 			}
 		}
 
