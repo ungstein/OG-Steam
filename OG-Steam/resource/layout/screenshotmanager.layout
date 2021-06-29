@@ -162,9 +162,9 @@
 		{
 			minimum-width=256
 			minimum-height=10
-			font-size=13
+			font-size=16
 			font-family=basefont
-			font-weight=700
+			font-weight=100
 		}
 		
 		ScreenshotLoadingThrobber
@@ -178,14 +178,14 @@
 		{
 			font-size=60
 			font-family=basefont
-			font-weight=700
+			font-weight=100
 		}
 
 		NoSelectionTitle
 		{
 			font-size=24
 			font-family=basefont
-			font-weight=400
+			font-weight=100
 		}
 
 		NoSelectionInstructions
