@@ -920,9 +920,9 @@
 		place { control=GamesPage_Details 	width=max height=max margin-top=34 margin-left=1 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
 		place { control=GamesPage_Grid 		width=max height=max margin-top=34 margin-left=1 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
 		place { control=WebPanel 			width=max height=max margin-top=1 margin-left=2 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
-		place { control=BroadcastPage			width=max height=max margin-top=82 margin-left=9 margin-right=9 margin-bottom=59 start=phonereminderbar dir=down }
-		place { control=BroadcastPageMin		width=298 height=168 margin-top=0 margin-left=3 margin-right=9 margin-bottom=59 dir=down align=bottom-right }
-		place { control=BroadcastPageMinHoriz	width=298 height=168 margin-top=0 margin-left=3 margin-right=9 margin-bottom=59 dir=down align=bottom-right }
+		place { control=BroadcastPage			width=max height=max margin-top=34 margin-left=9 margin-right=9 margin-bottom=59 start=phonereminderbar dir=down }
+		place { control=BroadcastPageMin		width=298 height=168 margin-top=34 margin-left=9 margin-right=9 margin-bottom=59 dir=down align=bottom-right }
+		place { control=BroadcastPageMinHoriz	width=298 height=168 margin-top=34 margin-left=9 margin-right=9 margin-bottom=59 dir=down align=bottom-right }
 		place { control=NewLibraryPage		width=max height=max margin-top=34 margin-left=3 margin-right=9 margin-bottom=59 start=phonereminderbar dir=down }
 		place { control=ConsolePage 		width=max height=max margin-top=34 margin-left=3 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
 
