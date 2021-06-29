@@ -641,7 +641,7 @@
 	
 	layout
 	{
-		place { control="UINavigatorPanel" width=max height=max margin-right=14 margin-left=12 margin-bottom=14 margin-top=58 }
+		place { control="UINavigatorPanel" width=max height=max margin-right=12 margin-left=12 margin-bottom=14 margin-top=58 }
 		
 		place { control="UIStatusPanel" region=bottom width=max height=max align=bottom margin-bottom=0 }
 		
