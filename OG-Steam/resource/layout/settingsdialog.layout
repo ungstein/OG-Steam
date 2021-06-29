@@ -15,7 +15,7 @@
 		CDialogSettings
 		{
 			font-family=basefont
-			font-size=16
+			font-size=14
 			minimum-width="800"
 			minimum-height="620"
 			bgcolor=GreenBG
@@ -28,7 +28,7 @@
 		PropertySheet
 		{
 			font-family=basefont
-			font-size=16
+			font-size=14
 			minimum-width="535"
 			minimum-height="505"
 			inset="0 50 0 0"
