@@ -903,8 +903,8 @@
 		place { control="library_zoom" width=82 height=20 }
 	     
 		place [!$OSX] { control="label_library_zoom,library_zoom,label_zoom_separator,label_library_view" align=right y=40 height=20 spacing=3 margin-right=90 }
-		place [!$OSX] { control="library_music_menu" align=left x=350 y=49 height=20 spacing=3 margin-right=180 }
-		place [!$OSX] { control="library_music_add_button" align=left x=408 y=52 height=20 spacing=3 margin-right=180 }
+		place [!$OSX] { control="library_music_menu" align=left x=350 y=45 height=20 spacing=3 margin-right=180 }
+		place [!$OSX] { control="library_music_add_button" align=left x=408 y=49 height=20 spacing=3 margin-right=180 }
 		
 		place { control="library_filters_details,library_filters_list,library_filters_grid," align=right y=40 height=20 spacing=4 margin-right=9 width=20 }
 
@@ -921,15 +921,15 @@
 		place { control=GamesPage_Grid 		width=max height=max margin-top=34 margin-left=1 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
 		place { control=WebPanel 			width=max height=max margin-top=1 margin-left=2 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
 		place { control=BroadcastPage			width=max height=max margin-top=82 margin-left=9 margin-right=9 margin-bottom=59 start=phonereminderbar dir=down }
-		place { control=BroadcastPageMin		width=298 height=168 margin-top=0 margin-left=3 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
-		place { control=BroadcastPageMinHoriz	width=298 height=168 margin-top=0 margin-left=3 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
+		place { control=BroadcastPageMin		width=298 height=168 margin-top=0 margin-left=3 margin-right=9 margin-bottom=59 dir=down align=bottom-right }
+		place { control=BroadcastPageMinHoriz	width=298 height=168 margin-top=0 margin-left=3 margin-right=9 margin-bottom=59 dir=down align=bottom-right }
 		place { control=NewLibraryPage		width=max height=max margin-top=34 margin-left=3 margin-right=9 margin-bottom=59 start=phonereminderbar dir=down }
 		place { control=ConsolePage 		width=max height=max margin-top=34 margin-left=3 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
 
-		place { control=MediaPage 		width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=59 start=emailreminderbar dir=down }
-		place { control=ToolsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=59 start=emailreminderbar dir=down }
-		place { control=MusicPage_Details width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=59 start=emailreminderbar dir=down }
-		place { control="library_music_player_icon" align=right y=57 height=16 width=16 margin-right=10 }
+		place { control=MediaPage 		width=max height=max margin-top=0 margin-left=3 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
+		place { control=ToolsPage 		width=max height=max margin-top=0 margin-left=3 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
+		place { control=MusicPage_Details width=max height=max margin-top=0 margin-left=3 margin-right=9 margin-bottom=59 start=emailreminderbar dir=down }
+		place { control="library_music_player_icon" align=right y=47 height=16 width=16 margin-right=10 }
 
 	}
 
