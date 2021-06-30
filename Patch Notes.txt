@@ -4,6 +4,17 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.10
+
+Minor tweaks
+- Trimmed down the Status Panel
+- Fixed status bar in Overlay web browser
+- Changed Screenshot Manager dropdown font and weight
+- Fixed frame title and menu colour
+- Various small adjustments
+
+------------------------------------------------------------
+
 v1.0.9a
 
 Minor tweaks
