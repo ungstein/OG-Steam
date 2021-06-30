@@ -641,7 +641,7 @@
 	
 	layout
 	{
-		place { control="UINavigatorPanel" width=max height=max margin-right=12 margin-left=12 margin-bottom=14 margin-top=58 }
+		place { control="UINavigatorPanel" width=max height=max margin-right=12 margin-left=12 margin-bottom=12 margin-top=58 }
 		
 		place { control="UIStatusPanel" region=bottom width=max height=max align=bottom margin-bottom=0 }
 		
@@ -665,9 +665,9 @@
 		
 		place [!$OSX] { control="ImageLogo" align=right x=650 y=0 width=340 height=133 margin-top=0 margin-right=0}
 		
-		place { control="add_game" x=21 y=25 region=bottom height=22}
+		place { control="add_game" x=21 y=27 region=bottom height=22}
 
-		place { control="view_friends" height=42 width=72 region=bottom align=right dir=right margin-top=15 margin-right=21 }
+		place { control="view_friends" height=42 width=72 region=bottom align=right dir=right margin-top=17 margin-right=21 }
 	
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=104 }
