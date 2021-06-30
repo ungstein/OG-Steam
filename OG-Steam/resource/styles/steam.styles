@@ -1109,7 +1109,7 @@ steam.styles
 			font-size=16
 			padding-left="0"
 			padding-right="72"
-			textcolor = DisabledText1
+			textcolor = TitleDimText
 			inset = "22 8 0 4"
 			render_bg
 			{
@@ -1839,7 +1839,7 @@ steam.styles
 		{	
 			font-family=basefont
 			font-size=16
-			textcolor="labeldisabled"
+			textcolor="TitleDimText"
 			padding-right=-2
 			inset="1 0 1 0"
 		}
