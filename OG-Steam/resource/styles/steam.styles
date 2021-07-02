@@ -2184,10 +2184,10 @@ steam.styles
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
 
 				//Up Arrow
-				10="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 7, BorderBright )"
-				11="fill( x0 + 7, y0 + 7, x0 + 10, y0 + 8, BorderBright )"
-				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, BorderBright )"
-				13="fill( x0 + 5, y0 + 9, x0 + 12, y0 + 10, BorderBright )"
+				10="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 7, Label )"
+				11="fill( x0 + 7, y0 + 7, x0 + 10, y0 + 8, Label )"
+				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, Label )"
+				13="fill( x0 + 5, y0 + 9, x0 + 12, y0 + 10, Label )"
 			}
 		}
 
@@ -2241,10 +2241,10 @@ steam.styles
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
 
 				//Down Arrow
-				10="fill( x0 + 8, y0 + 10, x0 + 9, y0 + 11, BorderBright )"
-				11="fill( x0 + 7, y0 + 9, x0 + 10, y0 + 10, BorderBright )"
-				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, BorderBright )"
-				13="fill( x0 + 5, y0 + 7, x0 + 12, y0 + 8, BorderBright )"
+				10="fill( x0 + 8, y0 + 10, x0 + 9, y0 + 11, Label )"
+				11="fill( x0 + 7, y0 + 9, x0 + 10, y0 + 10, Label )"
+				12="fill( x0 + 6, y0 + 8, x0 + 11, y0 + 9, Label )"
+				13="fill( x0 + 5, y0 + 7, x0 + 12, y0 + 8, Label )"
 			}
 		}
 
@@ -2298,10 +2298,10 @@ steam.styles
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
 
 				//Left Arrow
-				10="fill( x0 + 9, y0 + 4, x0 + 10, y0 + 11, BorderBright )"
-				11="fill( x0 + 8, y0 + 5, x0 + 9, y0 + 10, BorderBright )"
-				12="fill( x0 + 7, y0 + 6, x0 + 8, y0 + 9, BorderBright )"
-				13="fill( x0 + 6, y0 + 7, x0 + 7, y0 + 8, BorderBright )"
+				10="fill( x0 + 9, y0 + 4, x0 + 10, y0 + 11, Label )"
+				11="fill( x0 + 8, y0 + 5, x0 + 9, y0 + 10, Label )"
+				12="fill( x0 + 7, y0 + 6, x0 + 8, y0 + 9, Label )"
+				13="fill( x0 + 6, y0 + 7, x0 + 7, y0 + 8, Label )"
 			}
 		}
 
@@ -2352,10 +2352,10 @@ steam.styles
 				4="fill( x1 - 1, y0, x1, y1, BorderDark )"  // right
 
 				//Right Arrow
-				10="fill( x0 + 6, y0 + 4, x0 + 7, y0 + 11, BorderBright )"
-				11="fill( x0 + 7, y0 + 5, x0 + 8, y0 + 10, BorderBright )"
-				12="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 9, BorderBright )"
-				13="fill( x0 + 9, y0 + 7, x0 + 10, y0 + 8, BorderBright )"
+				10="fill( x0 + 6, y0 + 4, x0 + 7, y0 + 11, Label )"
+				11="fill( x0 + 7, y0 + 5, x0 + 8, y0 + 10, Label )"
+				12="fill( x0 + 8, y0 + 6, x0 + 9, y0 + 9, Label )"
+				13="fill( x0 + 9, y0 + 7, x0 + 10, y0 + 8, Label )"
 			}
 		}
 
