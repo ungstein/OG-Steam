@@ -30,4 +30,4 @@ Preview
 ![Small Mode](https://i.imgur.com/HSO8YJb.png)
 ![Overlay](https://i.imgur.com/zbE6VYw.png)
 ![Servers](https://i.imgur.com/CFMBKd7.png)
-![Music Player](https://i.imgur.com/nBrVwqL.png)
+![Music Player](https://i.imgur.com/0ojNCTZ.png)
