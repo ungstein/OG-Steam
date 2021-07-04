@@ -4,6 +4,17 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.10a
+
+Minor tweaks
+- Fixed TreeNodeText not displaying full directory names
+- Fixed ListPanel weirdness
+
+Cleanup
+- Made steam.styles much more consistent and readable
+
+------------------------------------------------------------
+
 v1.0.10
 
 Minor tweaks
