@@ -121,8 +121,8 @@
 		BrowseButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_browse_hover }
 		
 		StatusStyle	{ render_bg={} font-family=basefont textcolor="LabelFocus" font-size=14	}
-		StatusStyleDim	{ render_bg={} font-family=basefont textcolor="LabelDisabled" font-size=14	}
-		InfoLabelStyle	{ render_bg={} font-family=basefont font-size=14 textcolor="LabelDisabled" }
+		StatusStyleDim	{ render_bg={} font-family=basefont textcolor="Label" font-size=14	}
+		InfoLabelStyle	{ render_bg={} font-family=basefont font-size=14 textcolor="Label" }
 		TrackListStyle { }
 		NoTracksLabelStyle	{	bgcolor=none render_bg={} image=graphics/music_background }
 		
