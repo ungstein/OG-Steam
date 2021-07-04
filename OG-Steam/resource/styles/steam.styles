@@ -1769,6 +1769,7 @@ steam.styles
 		{
 			image = "Graphics/Window-Close"
 			inset = "-6 0 0 0"
+			render_bg {}
 		}
 
 		Panel
