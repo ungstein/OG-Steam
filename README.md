@@ -1,7 +1,5 @@
 # OG-Steam
 
-**If you modify and/or redistribute this skin, I only ask that you credit me (Ungstein) as the original author.**
-
 Update: Try <a href="https://github.com/ungstein/OG-Steam-Library">OG-Steam-Library<a> theme for use with <a href="https://github.com/PhantomGamers/SteamFriendsPatcher">SteamFriendsPatcher<a>.
 
 An Internet Time Warp
