@@ -4,6 +4,14 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.10b
+
+Minor tweaks
+- Friends & Chat button size is now consistent in Overlay
+- Fixed Overlay desktop link colour
+
+------------------------------------------------------------
+
 v1.0.10a
 
 Minor tweaks
