@@ -181,10 +181,10 @@ steam.styles
 		"p_ClayMouseDown"		"94 94 94 255"
 		"ClaySheetBottom"		"92 90 87 255"
 		"Maize"					"196 181 80 255"
-		"MaizeBG"				"145 134 60 255"  	// background color of any selected text or menu item
+		"MaizeBG"				"145 134 60 255"	// background color of any selected text or menu item
 		"GreenBG"				"76 88 68 255"
-		"LightGreenBG"			"90 106 80 255"   	// darker background color
-		"DarkGreenBG"			"62 70 55 255"    	// background color of text edit panes (chat, text Entries, etc.)
+		"LightGreenBG"			"90 106 80 255"		// darker background color
+		"DarkGreenBG"			"62 70 55 255"		// background color of text edit panes (chat, text Entries, etc.)
 		"LightGrayBG"			"121 126 121 255"
 		"GrayBG"				"73 78 73 255"
 		"GrayBG2"				"82 89 78 255"
@@ -194,39 +194,39 @@ steam.styles
 		// colours pulled from TrackerScheme.res (2003)
 
 		// base colors
-		"BaseText"			"216 222 211 255"	// used in text windows, lists
-		"BrightBaseText"	"255 255 255 255"	// brightest text
-		"SelectedText"		"255 255 255 255"	// selected text
-		"DimBaseText"		"160 170 149 255"	// dim base text
-		"LabelDimText"		"160 170 149 255"	// used for info text
-		"ControlText"		"216 222 211 255"	// used in all text controls
-		"BrightControlText"	"196 181 80 255"	// use for selected controls
-		"DisabledText1"		"117 128 111 255"	// disabled text
-		"DisabledText2"		"40 46 34 255"		// overlay color for disabled text (to give that inset look)
-		"DimListText"		"117 134 102 255"	// offline friends, unsubscribed games, etc.
+		"BaseText"				"216 222 211 255"	// used in text windows, lists
+		"BrightBaseText"		"255 255 255 255"	// brightest text
+		"SelectedText"			"255 255 255 255"	// selected text
+		"DimBaseText"			"160 170 149 255"	// dim base text
+		"LabelDimText"			"160 170 149 255"	// used for info text
+		"ControlText"			"216 222 211 255"	// used in all text controls
+		"BrightControlText"		"196 181 80 255"	// use for selected controls
+		"DisabledText1"			"117 128 111 255"	// disabled text
+		"DisabledText2"			"40 46 34 255"		// overlay color for disabled text (to give that inset look)
+		"DimListText"			"117 134 102 255"	// offline friends, unsubscribed games, etc.
 
 		// background colors
-		"ControlBG"			"76 88 68 255"		// background color of controls
-		"ControlDarkBG"		"90 106 80 255"		// darker background color; used for background of scrollbars
-		"WindowBG"			"62 70 55 255"		// background color of text edit panes (chat, text entries, etc.)
-		"SelectionBG"		"149 136 49 255"	// background color of any selected text or menu item
-		"SelectionBG2"		"40 46 34 255"		// selection background in window w/o focus
-		"ListBG"			"62 70 55 255"		// background of server browser, buddy list, etc.
+		"ControlBG"				"76 88 68 255"		// background color of controls
+		"ControlDarkBG"			"90 106 80 255"		// darker background color; used for background of scrollbars
+		"WindowBG"				"62 70 55 255"		// background color of text edit panes (chat, text entries, etc.)
+		"SelectionBG"			"149 136 49 255"	// background color of any selected text or menu item
+		"SelectionBG2"			"40 46 34 255"		// selection background in window w/o focus
+		"ListBG"				"62 70 55 255"		// background of server browser, buddy list, etc.
 
 		// titlebar colors
-		"TitleText"			"255 255 255 255"
-		"TitleDimText"		"136 145 128 255"
-		"TitleBG"			"76 88 68 0"
-		"TitleDimBG"		"76 88 68 0"
+		"TitleText"				"255 255 255 255"
+		"TitleDimText"			"136 145 128 255"
+		"TitleBG"				"76 88 68 0"
+		"TitleDimBG"			"76 88 68 0"
 		
 		// slider tick colors
-		"SliderTickColor"	"127 140 127 255"
-		"SliderTrackColor"	"31 31 31 255"
+		"SliderTickColor"		"127 140 127 255"
+		"SliderTrackColor"		"31 31 31 255"
 
 		// border colors
-		"BorderBright"		"136 145 128 255"	// the lit side of a control
-		"BorderDark"		"40 46 34 255"		// the dark/unlit side of a control
-		"BorderSelection"	"0 0 0 255"			// the additional border color for displaying the default/selected button
+		"BorderBright"			"136 145 128 255"	// the lit side of a control
+		"BorderDark"			"40 46 34 255"		// the dark/unlit side of a control
+		"BorderSelection"		"0 0 0 255"			// the additional border color for displaying the default/selected button
 
 		// end of colours from TrackerScheme.res
 
