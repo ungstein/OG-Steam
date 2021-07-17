@@ -649,9 +649,9 @@
 
 		// controls from left to right, otherwise depencencies are broken using end-right
 			
-		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=8 spacing=2 }
+		place { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=8 spacing=2 }
 
-		place [!$OSX] { control="fullscreen" align=right y=7 height=24 spacing=0 margin-right=21 margin-top=61 }
+		place { control="fullscreen" align=right y=7 height=24 spacing=0 margin-right=21 margin-top=61 }
 
 		place { control="startvr, exitvr" align=right end-right="fullscreen" height=24 margin-right=8 margin-top=68 }
 
@@ -659,7 +659,7 @@
 		place { control="InboxButton" align=right end-right="AccountButton" margin-top=68 margin-right=8 height=24 }
 		place { control="AnnouncementButton" align=right end-right="InboxButton" margin-top=68 margin-right=8 height=24 width=34 }
 		place { control="ParentalLockButton" align=right end-right="AnnouncementButton" margin-top=68 margin-right=8 height=24 width=44 }
-		place [!$OSX] { control="universe_label, EOLAlert, SupportAlert" spacing=8 align=center end-right="ParentalLockButton" margin-top=68 margin-right=8 height=24 }
+		place { control="universe_label, EOLAlert, SupportAlert" spacing=8 align=right end-right="ParentalLockButton" margin-top=68 margin-right=8 height=24 }
 
 		region { name=bottom align=bottom width=max height=80 }
 		
