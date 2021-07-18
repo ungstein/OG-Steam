@@ -305,18 +305,14 @@
 			font-weight=1000
 			font-style=none
 			textcolor=white
-			padding-left=50
-			padding-right=50
+			padding-left=8
+			padding-right=8
 			padding-top=6
 			inset="-8 -3 8 0"
 			render {}
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1+1, parental_lock_inactive1 )"
-				1="image( x0, y0, x0, y1, graphics/support_flag_left )"
-				2="image( x1, y0, x1, y1, graphics/support_flag_right )"
-				3="image_scale( x0+3, y0, x1, y0+3, graphics/support_flag_top )"
-				4="image_scale( x0+3, y1, x1, y1+3, graphics/support_flag_bottom )"
 			}
 		}
 		
@@ -327,18 +323,14 @@
 			font-weight=1000
 			font-style=none
 			textcolor=white
-			padding-left=50
-			padding-right=50
+			padding-left=8
+			padding-right=8
 			padding-top=6
 			inset="-8 -3 8 0"
 			render {}
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, parental_lock_inactive3 )"
-				1="image( x0, y0, x0, y1, graphics/support_flag_left_hover )"
-				2="image( x1, y0, x1, y1, graphics/support_flag_right_hover )"
-				3="image_scale( x0+3, y0, x1, y0+3, graphics/support_flag_top_hover )"
-				4="image_scale( x0+3, y1, x1, y1+3, graphics/support_flag_bottom_hover )"
 			}
 		}
 
