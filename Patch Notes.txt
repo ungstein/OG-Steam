@@ -4,6 +4,16 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.11
+
+Minor tweaks
+- Added maize mini throbber (used in steamshutdowndialog)
+- Pulled more colours from TrackerScheme.res (2003)
+- Changed GameItem_Uninstalled text colour
+- Fixed SupportAlert position (inset is still broken)
+
+------------------------------------------------------------
+
 v1.0.10b
 
 Minor tweaks
