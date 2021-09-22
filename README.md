@@ -19,7 +19,7 @@ Installing
 * Install the <a href="https://github.com/ungstein/OG-Steam/files/7207148/WineTahomaBit.zip">WineTahomaBit</a> font for a truly authentic retro look
   (Credit: <a href="https://github.com/Xenthio">Xenthio</a>, based on "Wine Tahoma Regular" Version 0.001 (C) 2004 Larry Snyder Based on Bitstream Vera Sans (C) Bitstream Inc GNU Lesser General Public License 2.1).
 
-  WineTahomaBit is enabled by changing basefont from "Tahoma" to "WineTahomaBit" on line 36 of "OG-Steam\resource\styles\steam.styles". This will be enabled by default with the next release. Note: DirectWrite **must be disabled**, or characters will be invisible.
+  WineTahomaBit is enabled by changing basefont from "Tahoma" to "WineTahomaBit" on line 36 of "OG-Steam\resource\styles\steam.styles". This will be enabled by default with the next release. Note: DirectWrite **must be disabled** through `Settings/Interface`, or characters will be invisible.
 
 Preview
 -
