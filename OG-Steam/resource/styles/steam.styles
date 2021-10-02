@@ -33,7 +33,7 @@ steam.styles
 		buttontextactive=Text
 
 		// cool we can define font-families here as well
-		basefont="Tahoma"
+		basefont="WineTahomaBit"
 		basefontbold="Tahoma Bold"
 		basefont="Helvetica" [$OSX]
 		basefontbold="Helvetica Bold" [$OSX]
@@ -98,7 +98,8 @@ steam.styles
 		BackgroundStart="23 22 20 180"
 		BackgroundStartOpaque="36 35 34 255"
 
-		ClientBG="26 25 24 255"
+//		ClientBG="26 25 24 255"
+		ClientBG="62 70 55 255"
 		DialogBG="56 54 53 255"
 		DarkClientBG="36 35 34 255"
 		DarkDialogBG="56 54 53 255"
@@ -1722,7 +1723,13 @@ steam.styles
 			bgcolor = none
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y0+80, DarkGreenBG, ClientBG )" // inside
+				// lines around
+				1="fill( x0, y0, x1, y0 + 1, BorderBright )"  // top
+				2="fill( x0, y1 - 1, x1, y1, BorderBright )"  // bottom
+				3="fill( x0, y0, x0 + 1, y1 - 1, BorderBright )"  // left
+				4="fill( x1 - 1, y0, x1, y1, BorderBright )"  // right
+				
+				5="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DarkGreenBG )" // inside
 			}
 		}
 		
