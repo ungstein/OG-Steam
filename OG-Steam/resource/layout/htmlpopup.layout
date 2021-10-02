@@ -253,7 +253,7 @@
 		place { control="StatusText" align=bottom height=24 margin-left=9 margin-bottom=1 }
 		place { control="PageLoadThrobber" align=right margin-top=34 margin-right=10 width=20 height=20 }	
 	
-		place { control="BackButton,ForwardButton,ReloadButton,StopButton,URLStatusImage,EVCert,URLBar" x=5 y=32 height=24 width=max spacing=8 margin-right=100 }
+		place { control="BackButton,ForwardButton,ReloadButton,StopButton,URLStatusImage,EVCert,URLBar" x=5 y=32 height=24 width=max spacing=8 margin-right=39 }
 	}
 	
 }

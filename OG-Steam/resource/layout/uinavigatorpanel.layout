@@ -892,7 +892,7 @@
 		
 		place { control="EVCert" align=left x=155 y=43 height=23 width=100 spacing=0 margin-left=0 }
 		
-		place { control="URLBar" x=255 y=43 height=23 width=max spacing=8 margin-right=100 }
+		place { control="URLBar" x=255 y=43 height=23 width=max spacing=8 margin-right=39 }
 
 		place {control="label_search_icon,library_search" x=80 y=43 height=24 spacing=8}
 		
