@@ -4,6 +4,20 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.12
+
+Minor tweaks
+- Added support for WineTahomaBit font
+- Fixed HTML find bar
+- Fixed bug where notifications would not appear
+- Improved the appearance of notification boxes
+- Adjusted URLBar
+
+Cleanup
+- Removed unnecessary files
+
+------------------------------------------------------------
+
 v1.0.11
 
 Minor tweaks
