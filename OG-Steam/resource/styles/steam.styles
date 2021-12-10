@@ -340,7 +340,7 @@ steam.styles
 		RichText.InsetX							"6"
 		RichText.InsetY							"6"
 
-		ScrollBar.Wide							"21"
+		ScrollBar.Wide							"19"
 		
 		SectionedListPanel.CollapserWidth		"16"
 		
