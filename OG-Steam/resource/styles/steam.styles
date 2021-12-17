@@ -1140,7 +1140,7 @@ steam.styles
 		Label
 		{
 			font-family = basefont
-			font-size = 14
+			font-size = 16
 			textcolor = Label
 			selectedtextcolor = Text
 		}
@@ -1861,6 +1861,7 @@ steam.styles
 
 		RadioButton
 		{
+			font-size = 16
 			font-family = basefont
 			textcolor = White
 			image = "Graphics/radUnselStd"
