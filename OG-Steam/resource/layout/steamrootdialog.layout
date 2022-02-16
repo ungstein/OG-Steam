@@ -155,7 +155,8 @@
 
 		AddGameButton {
 			font-family = basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$OSX]
 			inset = "4 0 0 0"
 			textcolor = White
 			render_bg

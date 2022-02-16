@@ -49,6 +49,7 @@
 			minimum-height="525"
 			font-family=basefont
 			font-size=18
+			font-size=20 [$OSX]
 			padding=6
 			render
 			{

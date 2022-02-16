@@ -304,7 +304,7 @@ steam.styles
 
 		Notifications.PanelPosition			"BottomRight"		// Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
 		Notifications.PanelPosition			"TopRight" [$OSX]	// the dock is on the bottom for OSX, so instead pop top right like other apps do
-		Notifications.SlideDirection		"None"				// Can be "Vertical", "Horizontal", "None" and controls slide effect
+		Notifications.SlideDirection		"Vertical"				// Can be "Vertical", "Horizontal", "None" and controls slide effect
 		Notifications.FadeInTime			"0.45"				// Controls the time it takes to slide/fade into view
 		Notifications.FadeOutTime			"0.45"				// Controls the time it takes to slide/fade out of view
 		Notifications.DisplayTime			"6.0"				// Controls the length of time at steady state after fade in and before fade out
@@ -418,7 +418,8 @@ steam.styles
 		Button
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			inset = "4 0 0 0"
 			textcolor = White
 			render_bg {
@@ -502,7 +503,8 @@ steam.styles
 		"Page Button"
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 			render_bg
 			{
@@ -588,7 +590,8 @@ steam.styles
 		CFriendsListSectionAffordance
 		{
 			inset = "0 0 0 0"
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
 		}
@@ -597,7 +600,7 @@ steam.styles
 		{
 			bgcolor = none
 			font-family = basefont
-			font-size = 16
+			font-size = 14
 			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
@@ -609,7 +612,7 @@ steam.styles
 			inset = "0 2 0 0"
 			bgcolor = none
 			font-family = basefont
-			font-size = 16
+			font-size = 14
 			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
@@ -703,7 +706,8 @@ steam.styles
 			inset = "3 0 0 0"
 			textcolor = White
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			selectedtextcolor = White
 			selectedbgcolor = MaizeBG
 			render
@@ -1069,7 +1073,8 @@ steam.styles
 
 		FrameTitle {
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			padding-left = 0
 			padding-right = 64
 			textcolor = TitleDimText
@@ -1083,7 +1088,8 @@ steam.styles
 		FrameTitle:FrameFocus
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			padding-left = 0
 			padding-right = 64
 			textcolor = White
@@ -1098,7 +1104,8 @@ steam.styles
 		{
 			bgcolor = none
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
 			selectedtextcolor = White
@@ -1140,7 +1147,8 @@ steam.styles
 		Label
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = Label
 			selectedtextcolor = Text
 		}
@@ -1187,7 +1195,8 @@ steam.styles
 			inset = "0 0 0 0"
 			bgcolor = DarkGreenBG
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
 			selectedtextcolor = White
@@ -1299,7 +1308,8 @@ steam.styles
 		"GameColumn_BigText"
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 700
 			textcolor = text
 		}
@@ -1307,7 +1317,8 @@ steam.styles
 		ListPanelCheckBox
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
 			image = "graphics/chkUnselStd_Sm"
@@ -1348,7 +1359,8 @@ steam.styles
 		"ListPanelColumnheader ListPanelCheckBox"
 		{
 			font-family = basefont
-			font-size = 15
+			font-size = 14
+			font-size = 15 [$OSX]
 			font-weight = 100
 			textcolor = White
 			image = "graphics/chkUnSelFocus_Sm"
@@ -1373,7 +1385,7 @@ steam.styles
 		ListPanelColumnheader
 		{
 			font-family = basefont
-			font-size = 15
+			font-size = 14
 			font-size = 15 [$OSX]
 			font-weight = 100
 			textcolor = White
@@ -1398,7 +1410,7 @@ steam.styles
 		"Csteamrootdialog ListPanelColumnheader"
 		{
 			font-family = basefont
-			font-size = 15
+			font-size = 14
 			font-size = 15 [$OSX]
 			font-weight = 100
 			textcolor = White
@@ -1529,7 +1541,8 @@ steam.styles
 		ListPanelInterior
 		{
 			inset = "0 0 0 1"
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 			bgcolor = none
 		}   
@@ -1540,7 +1553,8 @@ steam.styles
 		"CSteamRootDialog ListPanel"
 		{
 			inset = "0 0 0 1"
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 			bgcolor = none
 		}
@@ -1548,7 +1562,8 @@ steam.styles
 		 "Csteamrootdialog ListPanelInterior"
 		{
 			inset = "0 0 0 1"
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 			bgcolor = none
 		}  
@@ -1559,7 +1574,8 @@ steam.styles
 		"Page ListPanelInterior"
 		{
 			inset = "0 0 0 1"
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 			bgcolor = none
 		}
@@ -1582,7 +1598,8 @@ steam.styles
 		{
 			textcolor = Text
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			bgcolor = none
 			render_bg {}
 		}
@@ -1591,7 +1608,8 @@ steam.styles
 		{
 			textcolor = Text
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-style = underline
 		}
 
@@ -1657,7 +1675,8 @@ steam.styles
 		"MenuBar MenuButton" 
 		{	
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = TitleDimText
 			padding-right = -2
 			inset = "1 0 1 0"
@@ -1679,7 +1698,8 @@ steam.styles
 		{
 			textcolor = White
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 		}
 			MenuButton:hover
 			{
@@ -1702,7 +1722,8 @@ steam.styles
 		MenuItem
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 		}
 
@@ -1719,7 +1740,8 @@ steam.styles
 		Notification
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			bgcolor = none
 			render_bg
 			{
@@ -1770,7 +1792,8 @@ steam.styles
 
 		PageTab
 		{
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 			render_bg
 			{
@@ -1786,7 +1809,8 @@ steam.styles
 
 		PageTab:selected
 		{
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = Over
 			render_bg
 			{
@@ -1802,7 +1826,8 @@ steam.styles
 
 		"PageDragFrame PageTab"
 		{
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 		}
 
 		TabCloseButton
@@ -1815,7 +1840,8 @@ steam.styles
 		Panel
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
 			bgcolor = none
@@ -1861,7 +1887,8 @@ steam.styles
 
 		RadioButton
 		{
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-family = basefont
 			textcolor = White
 			image = "Graphics/radUnselStd"
@@ -1912,7 +1939,8 @@ steam.styles
 			selectedtextcolor = White
 			selectedbgcolor = MaizeBG
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			inset = "0 0 0 0"
 			render_bg
@@ -1932,7 +1960,8 @@ steam.styles
 		// style of links in a rich text control
 		"RichText url"
 		{
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 			selectedtextcolor = White
 			font-style = underline
@@ -1948,19 +1977,22 @@ steam.styles
 		{
 			textcolor = White
 			font-style = underline
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 		}
 
 		// style of bold text in a rich text control
 		"RichText bold"
 		{
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 1000
 		}
 
 		"RichText emphasis"
 		{
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-style = italic
 		}
 
@@ -2291,7 +2323,8 @@ steam.styles
 			bgcolor = none
 			inset = "0 0 0 0"  
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = Text
 			selectedtextcolor = White
@@ -2303,7 +2336,8 @@ steam.styles
 		{
 			bgcolor = none
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = Text
 			selectedtextcolor = White
@@ -2346,7 +2380,8 @@ steam.styles
 		StatusLabel
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = Label
 			font-style = uppercase
@@ -2360,7 +2395,8 @@ steam.styles
 		TextEntry
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			bgcolor = DarkGreenBG
 			textcolor = White
 			inset = "4 0 4 0"
@@ -2416,7 +2452,8 @@ steam.styles
 		"Page TextEntry"
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 			selectedbgcolor = MaizeBG
 			selectedtextcolor = White
@@ -2493,7 +2530,8 @@ steam.styles
 		TextEntryURL
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = text
 			font-weight = 400
 			bgcolor = none
@@ -2512,7 +2550,8 @@ steam.styles
 		{
 			inset = "1 0 0 0"
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
 			bgcolor = none
@@ -2547,7 +2586,8 @@ steam.styles
 		"Page ToggleButton"
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			textcolor = White
 			bgcolor = none
@@ -2644,7 +2684,8 @@ steam.styles
 			textcolor = Label
 			bgcolor = none
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			font-style = underlined
 		}
@@ -2658,7 +2699,8 @@ steam.styles
 			textcolor = Label
 			bgcolor = none
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 400
 			font-style = underlined
 		}
@@ -3064,7 +3106,8 @@ steam.styles
 		{
 			font-family = basefont
 			font-style = uppercase
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			font-weight = 100
 			textcolor = Text
 			bgcolor = none
@@ -3106,7 +3149,8 @@ steam.styles
 		SuperNavMenuItem
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = White
 		}
 			SuperNavMenuItem:selected
@@ -3128,7 +3172,8 @@ steam.styles
 		html-findbar
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = Text
 			font-weight = 100
 			bgcolor = GreenBG
@@ -3150,7 +3195,8 @@ steam.styles
 		html-imebar
 		{
 			font-family = basefont
-			font-size = 16
+			font-size = 14
+			font-size = 16 [$OSX]
 			textcolor = Text
 			font-weight = 100
 			bgcolor = GreenBG

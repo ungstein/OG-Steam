@@ -266,7 +266,8 @@
 		{
 			padding-left=0
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$OSX]
 			font-weight=400
 			textcolor=LabelDisabled
 			inset="0 -2 0 0"
@@ -445,7 +446,8 @@
 		NavLabel
 		{
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$OSX]
 			font-weight=400
 			textcolor="Label"
 			font-style=uppercase
@@ -688,7 +690,8 @@
 			font-family=basefont
 			inset-top=1
 			inset-left=2
-			font-size=16
+			font-size=14
+			font-size=16 [$OSX]
 			textcolor="label"
 			font-weight=400
 			bgcolor="none"
@@ -724,7 +727,8 @@
 		
 		CUINavButton {
 			font-family = basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$OSX]
 			inset = "9 0 9 0"
 			textcolor = White
 			minimum-width = 66
@@ -760,7 +764,8 @@
 			textcolor="Labelfocus"
 			bgcolor="none"
 			font-family=basefont
-			font-size=16
+			font-size=14
+			font-size=16 [$OSX]
 			font-weight=400 
 			font-style="uppercase"
 			padding-left=5
@@ -833,7 +838,8 @@
 		LabelEVCert
 		{
 		font-family=basefont
-		font-size=16
+		font-size=14
+		font-size=16 [$OSX]
 		textcolor="Black"
 		font-weight=400
 		bgcolor="html.secureurl"
