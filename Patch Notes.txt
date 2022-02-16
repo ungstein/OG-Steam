@@ -4,6 +4,17 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.12a
+
+Minor tweaks
+- Fixed Friends details layout in Overlay
+- Fixed security icons
+- Fixed radio button font size
+- Fixed label font size
+- Fixed Linux font sizes
+
+------------------------------------------------------------
+
 v1.0.12
 
 Minor tweaks
