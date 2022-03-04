@@ -14,7 +14,7 @@ Installing
 
 **Note: This skin has not been tested on Linux or MacOS**
 
-* Copy **OG-Steam** into `Steam/skins`
+* Copy the **OG-Steam** folder into `Steam/skins`
 * Select the new skin through `Settings/Interface`
 * Install the <a href="https://github.com/ungstein/OG-Steam/files/7207148/WineTahomaBit.zip">WineTahomaBit</a> font for a truly authentic retro look
   (Credit: <a href="https://github.com/Xenthio">Xenthio</a>, based on "Wine Tahoma Regular" Version 0.001 (C) 2004 Larry Snyder Based on Bitstream Vera Sans (C) Bitstream Inc GNU Lesser General Public License 2.1).
