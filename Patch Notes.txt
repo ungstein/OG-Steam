@@ -4,6 +4,14 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.12b
+
+Minor tweaks
+- Modified 2x button textures to prevent console errors
+- Fixed missing maximise/restore buttons
+
+------------------------------------------------------------
+
 v1.0.12a
 
 Minor tweaks
