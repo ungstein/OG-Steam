@@ -1416,7 +1416,7 @@ steam.styles
 			textcolor = White
 			font-style = uppercase
 			bgcolor = none
-			inset = 0 0 0 0
+			inset = "0 0 0 0"
 			padding-top = 1
 		}
 			"Csteamrootdialog ListPanelColumnHeader:hover"
