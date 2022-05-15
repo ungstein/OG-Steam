@@ -44,7 +44,7 @@
 		}
 		"SettingsList"
 		{
-			inset="-2 0 0 0"
+			inset="-3 0 0 0"
 			minimum-width="190"
 			minimum-height="525"
 			font-family=basefont
