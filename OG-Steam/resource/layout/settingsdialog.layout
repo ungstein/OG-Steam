@@ -48,8 +48,8 @@
 			minimum-width="190"
 			minimum-height="525"
 			font-family=basefont
-			font-size=18
-			font-size=20 [$OSX]
+			font-size=16
+			font-size=18 [$OSX]
 			padding=6
 			render
 			{
@@ -60,7 +60,8 @@
     {     
 		inset="3 0 0 0"
 		font-family=basefont
-		font-size=16
+		font-size=14
+		font-size=16 [$OSX]
 		textcolor="White"
 		bgcolor="none" 
    		 render
