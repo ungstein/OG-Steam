@@ -4,6 +4,13 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.13
+
+Minor tweaks
+- Modified content page margins in line with Steam beta update
+
+------------------------------------------------------------
+
 v1.0.12b
 
 Minor tweaks
