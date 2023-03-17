@@ -4,6 +4,13 @@ OG-Steam Patch Notes
 
 ------------------------------------------------------------
 
+v1.0.13a
+
+Minor tweaks
+- Modified account menu layout in line with Steam beta update
+
+------------------------------------------------------------
+
 v1.0.13
 
 Minor tweaks
