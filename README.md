@@ -1,3 +1,11 @@
+
+---
+**Update: Steam's latest Beta is a complete rewrite of the UI, with removal of all VGUI elements. This update effectively renders this skin unusable. All good things come to an end, and I knew the end was coming when I started this project. Thank you to everyone who used OG-Steam in its short lifespan. Thank you to the contributors, and those of you who submitted bug reports. It has been a fun nostalgia trip that I won't forget.**
+
+I am leaving the README below for posterity.
+
+---
+
 # OG-Steam
 
 Update: Try <a href="https://github.com/ungstein/OG-Steam-Library">OG-Steam-Library<a> theme for use with <a href="https://github.com/PhantomGamers/SFP">SFP</a> (Previously <a href="https://github.com/PhantomGamers/SteamFriendsPatcher">SteamFriendsPatcher<a>).
